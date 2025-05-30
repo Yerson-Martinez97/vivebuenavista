@@ -1,0 +1,37 @@
+{
+    "FestivalNacionalDelCafe": {
+        "title": "Festival Nacional del Café",
+        "description": "El Festival Nacional del Café en Buena Vista es un evento que celebra la producción cafetalera de la región.\n Entre sus actividades destacan: \n 1. Coronación de la Soberana del Café: Se elige y corona a una representante que simboliza la cultura cafetalera.\n 2. Muestra y Degustación de Café: Los productores locales presentan sus variedades de café para degustación. \n 3. Conferencias: Se realizan charlas sobre técnicas de cultivo y comercialización del café.\n 4. Feria Productiva, Artesanal y Gastronómica: Se exhiben productos artesanales y gastronómicos de la región.\n 5. Actividades Hípicas: Eventos ecuestres que forman parte de la celebración.\n Este festival ha alcanzado renombre nacional y es una muestra del esfuerzo de los caficultores de Buena Vista.",
+        "event": [
+            "Generalmente se celebra el primer domingo de septiembre. Este evento incluye la coronación de la Reina del Café, degustaciones, ferias productivas y actividades culturales."
+        ]
+    },
+    "MisaDeCampaña": {
+        "title": "Misa de Campaña",
+        "description": "La misa de campaña es una ceremonia religiosa que se celebra al aire libre, comúnmente en el campo o en plazas públicas. Estas misas son una tradición en muchas comunidades rurales, permitiendo a los fieles participar en la liturgia en un entorno natural. Aunque no se encontró una fuente específica sobre la misa de campaña en Buena Vista, este tipo de celebraciones son comunes en festividades religiosas del área.",
+        "event": [
+            "También se celebra el 26 de noviembre, durante la fiesta patronal."
+        ]
+    },
+    "FeriaDeGanado": {
+        "title": "Misa de Campaña",
+        "description": "En San Pedro de Buena Vista, se celebra el \"Toro Tinku\", la mayor feria ganadera de la región norte de Potosí. Esta festividad, reconocida por la Asamblea Legislativa Plurinacional, incluye exhibiciones de ganado y actividades culturales que reflejan la importancia de la ganadería en la región.",
+        "event": [
+            "Inicia el 27 de junio y culmina el 29 de junio, coincidiendo con la festividad de San Pedro y San Pablo."
+        ]
+    },
+    "RomeríaConCarretasYGruposFolcloricos": {
+        "title": "Romería con Carretas y Grupos Folclóricos",
+        "description": "Las romerías en Buena Vista son procesiones religiosas en las que los santos patronos son acompañados por carretas decoradas y grupos folclóricos. Estas celebraciones combinan la devoción religiosa con expresiones culturales, incluyendo música y danzas tradicionales. Aunque no se encontró una fuente específica sobre las romerías en Buena Vista, este tipo de eventos son comunes en las festividades locales.",
+        "event": [
+            "Se realiza en el marco de la fiesta patronal de Buena Vista, el 26 de noviembre."
+        ]
+    },
+    "CafeDeLaSiesta": {
+        "title": "Café de la Siesta",
+        "description": "El 'Café de la Siesta' es una tradición local que consiste en disfrutar de una taza de café durante la tarde, especialmente después del almuerzo. Esta costumbre resalta la importancia del café en la vida cotidiana de los habitantes de Buena Vista.",
+        "event": [
+            "No tiene una fecha específica; es una tradición diaria."
+        ]
+    }
+}

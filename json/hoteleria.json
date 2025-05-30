@@ -1,0 +1,479 @@
+{
+    "HaciendaElCafetal": {
+        "title": "Hotel Hacienda El Cafetal",
+        "reservations": [
+            {
+                "Landline": [
+                    "(+591 3) 9352067"
+                ],
+                "Mobile": [
+                    "+591 737 28 911",
+                    "+591 755 21 503"
+                ]
+            }
+        ],
+        "socialnetworks": [
+            {
+                "facebook": [
+                    {
+                        "icon": "<i class='fa-brands fa-facebook sn-facebook'></i>"
+                    },
+                    {
+                        "name": "Hacienda El Cafetal"
+                    },
+                    {
+                        "link": "https://www.facebook.com/p/Hacienda-El-Cafetal-100057449718169/"
+                    }
+                ]
+            }
+        ],
+        "services": [
+            "Cuenta con cabañas familiares para 4 y 6 personas, todas con baño privado y frigobar, además de acceso a piscina, churrasquera, parqueo, cafetería y grandes áreas verdes que le harán disfrutar al máximo la naturaleza.",
+            "Almuerzo típico como ser locro, sopa de maní, chancho al horno , pollerita y queperí al horno, majadito, o un buen churrasco, precios por persona (previa reserva).",
+            "Ruta del Café que se realiza a pocos metros de las cabañas de la Hacienda El Cafetal, lugar donde están las plantaciones, es un paseo guiado que permite al visitante conocer el proceso de transformación que abarca desde su cultivo hasta la ingestión por cualquier persona. "
+        ],
+        "attractions": [
+            "Mirador"
+        ],
+        "location": [
+            {
+                "address": "Se encuentra a 8 minutos con una distancia de 3,9 Km de Buenavista."
+            },
+            {
+                "map_url": "https://www.google.com/maps/dir/-17.460241416593423,-63.66031428880418/-17.465499466220333,-63.695564925375116"
+            }
+        ],
+        "images": [
+            "images/hoteleria/alejados/01/image01.webp",
+            "images/hoteleria/alejados/01/image02.webp",
+            "images/hoteleria/alejados/01/image03.webp"
+        ]
+    },
+    "SantaMarialaAntigua": {
+        "title": "Hotel Santa María la Antigua",
+        "reservations": [
+            {
+                "Mobile": [
+                    "+591 71694655"
+                ]
+            }
+        ],
+        "website": "https://santamaria.com.bo/",
+        "socialnetworks": [
+            {
+                "facebook": [
+                    {
+                        "icon": "<i class='fa-brands fa-facebook sn-facebook'></i>"
+                    },
+                    {
+                        "name": "Hotel Spa Santa Maria la Antigua"
+                    },
+                    {
+                        "link": "https://www.facebook.com/hotelspasantamarialaantigua/"
+                    }
+                ]
+            },
+            {
+                "tiktok": [
+                    {
+                        "icon": "<i class='fa-brands fa-tiktok sn-tiktok'></i>"
+                    },
+                    {
+                        "name": "@hotelsantamarialaantigua"
+                    },
+                    {
+                        "link": "https://www.tiktok.com/@hotelsantamarialaantigua"
+                    }
+                ]
+            },
+            {
+                "instagram": [
+                    {
+                        "icon": "<i class='fa-brands fa-instagram sn-instagram'></i>"
+                    },
+                    {
+                        "name": "Hotel Santa Maria La Antigua"
+                    },
+                    {
+                        "link": "https://www.instagram.com/hotelspasantamarialaantingua/"
+                    }
+                ]
+            }
+        ],
+        "services": [
+            "Wifi gratis",
+            "Se permiten mascotas a solicitud. Ello puede implicar un costo extra",
+            "Espacio de almacenamiento",
+            "Estacionamiento",
+            "Comedor",
+            "Recepción 24 horas",
+            "Desayuno gratuito",
+            "Piscina",
+            "Gastronomía"
+        ],
+        "atractions": [
+            "Paseos en caballo",
+            "Alimentar a Yacarés y caimanes",
+            "Ambrosia (Ordeño de las Vacas lecheras)",
+            "Spa Samui",
+            "Capilla",
+            "Canchas de Tenis, Futbol, Voleibol y minigolf",
+            "Granja",
+            "Safari",
+            "Pesca",
+            "Caminata guiada"
+        ],
+        "location": [
+            {
+                "address": "Se encuentra a 36 minutos con una distancia de 30,2 Km de Buenavista."
+            },
+            {
+                "map_url": "https://www.google.com/maps/dir/-17.460241416593423,-63.66031428880418/-17.37339097799032,-63.661577676560086"
+            }
+        ],
+        "images": [
+            "images/hoteleria/alejados/02/image01.webp",
+            "images/hoteleria/alejados/02/image02.webp",
+            "images/hoteleria/alejados/02/image03.webp",
+            "images/hoteleria/alejados/02/image04.webp"
+        ]
+    },
+    "LaPascanita": {
+        "title": "La Pascanita Hostal",
+        "reservations": [
+            {
+                "Mobile": [
+                    "+591 781 66 883",
+                    "+591 694 12 062"
+                ]
+            }
+        ],
+        "socialnetworks": [
+            {
+                "facebook": [
+                    {
+                        "icon": "<i class='fa-brands fa-facebook sn-facebook'></i>"
+                    },
+                    {
+                        "name": "La Pascanita"
+                    },
+                    {
+                        "link": "https://www.facebook.com/hotelspasantamarialaantigua/"
+                    }
+                ]
+            }
+        ],
+        "services": [
+            "Cabañas y habitaciones para familias, habitaciones para parejas y amigos, todas con baño privado y aire acondicionado",
+            "Wifi",
+            "Piscina",
+            "Parqueo",
+            "Área de juegos y deportivas",
+            "Cine a la carta",
+            "Churrasqueras",
+            "City Tours",
+            "Desayuno Incluido"
+        ],
+        "location": [
+            {
+                "address": "Se encuentra a 5 minutos con una distancia de 1,7 Km de la Plaza de Buenavista."
+            },
+            {
+                "map_url": "https://www.google.com/maps/dir/-17.460241416593423,-63.66031428880418/-17.45864624588401,-63.66915415623387"
+            }
+        ],
+        "images": [
+            "images/hoteleria/cerca/03/image01.webp",
+            "images/hoteleria/cerca/03/image02.webp",
+            "images/hoteleria/cerca/03/image03.webp",
+            "images/hoteleria/cerca/03/image04.webp"
+        ]
+    },
+    "BosqueDeAngeles": {
+        "title": "Bosque de ángeles",
+        "reservations": [
+            {
+                "Mobile": [
+                    "+591 760 64 658"
+                ]
+            }
+        ],
+        "services": [
+            "Cuenta con casa para 5 - 6 personas",
+            "Suite independiente para 2 - 3 personas ",
+            "Acogedores dormitorios",
+            "Cómodos sanitarios",
+            "Cocina comedor",
+            "Galerías",
+            "Panorámicas terrazas",
+            "Atractivos jardines",
+            "Churrasquera con fogón",
+            "Garaje cubierto",
+            "Wifi",
+            "TV Cable",
+            "Ventilador",
+            "Lavarropa automático/manual"
+        ],
+        "location": [
+            {
+                "address": "Se encuentra a 1 minuto con una distancia de 600 m de la Plaza de Buenavista."
+            },
+            {
+                "map_url": "https://www.google.com/maps/dir/-17.460241416593423,-63.66031428880418/-17.459061798728495,-63.65634339447788"
+            }
+        ],
+        "images": [
+            "images/hoteleria/cerca/04/image01.webp",
+            "images/hoteleria/cerca/04/image02.webp",
+            "images/hoteleria/cerca/04/image03.webp",
+            "images/hoteleria/cerca/04/image04.webp"
+        ]
+    },
+    "PosadaElCarmen": {
+        "title": "Hotel posada El Carmen",
+        "reservations": [
+            {
+                "Landline": [
+                    "+591 39322135"
+                ],
+                "Mobile": [
+                    "+591 785 32 871"
+                ]
+            }
+        ],
+        "services": [
+            "Cuenta con habitaciones matrimoniales",
+            "Habitaciones para 2, 3 y 4 personas",
+            "Habitaciones con baño privado",
+            "Aire acondicionado",
+            "TV Cable",
+            "Servicio de Restaurante",
+            "Parqueo",
+            "Wifi",
+            "Amplios espacios de recreación",
+            "Churrasquera, Bar, Garaje privado",
+            "Piscina"
+        ],
+        "location": [
+            {
+                "address": "Se encuentra a 1 minuto con una distancia de 120 metros de la Plaza de Buena Vista."
+            },
+            {
+                "map_url": "https://www.google.com/maps/dir/-17.460241416593423,-63.66031428880418/-17.460807745044086,-63.660722164049574"
+            }
+        ],
+        "images": [
+            "images/hoteleria/cerca/05/image01.webp",
+            "images/hoteleria/cerca/05/image02.webp",
+            "images/hoteleria/cerca/05/image03.webp"
+        ]
+    },
+    "HostalJardinDeMargarita": {
+        "title": "Hostal El Jardín de Margarita",
+        "reservations": [
+            {
+                "Mobile": [
+                    "+591 773 87 710"
+                ]
+            }
+        ],
+        "services": [
+            "Habitaciones",
+            "Baño"
+        ],
+        "location": [
+            {
+                "address": "Se encuentra a 1 minuto con una distancia de 200 metros de la Plaza de Buena Vista."
+            },
+            {
+                "map_url": "https://www.google.com/maps/dir/-17.460241416593423,-63.66031428880418/-17.459931802818897,-63.6594353841555"
+            }
+        ],
+        "images": [
+            "images/hoteleria/cerca/06/image01.webp",
+            "images/hoteleria/cerca/06/image02.webp",
+            "images/hoteleria/cerca/06/image03.webp"
+        ]
+    },
+    "HostalBuenaVista": {
+        "title": "Hostal Buena Vista",
+        "reservations": [
+            {
+                "Mobile": [
+                    "+591 755 25 288"
+                ]
+            }
+        ],
+        "socialnetworks": [
+            {
+                "facebook": [
+                    {
+                        "icon": "<i class='fa-brands fa-facebook sn-facebook'></i>"
+                    },
+                    {
+                        "name": "Hostal Buena Vista"
+                    },
+                    {
+                        "link": "https://www.facebook.com/hostalbuenavista1/"
+                    }
+                ]
+            }
+        ],
+        "services": [
+            "Habitaciones",
+            "Baño",
+            "Churrasqueras",
+            "Jardines",
+            "Piscinas",
+            "Áreas de descanso"
+        ],
+        "location": [
+            {
+                "address": "Se encuentra a 1 minuto con una distancia de 210 metros de la Plaza de Buena Vista."
+            },
+            {
+                "map_url": "https://www.google.com/maps/dir/-17.460241416593423,-63.66031428880418/-17.461569425673826,-63.66176410057655"
+            }
+        ],
+        "images": [
+            "images/hoteleria/cerca/07/image01.webp",
+            "images/hoteleria/cerca/07/image02.webp",
+            "images/hoteleria/cerca/07/image03.webp"
+        ]
+    },
+    "CabañaTalavera": {
+        "title": "Cabañas Talavera",
+        "reservations": [
+            {
+                "Mobile": [
+                    "+591 710 16 088"
+                ]
+            }
+        ],
+        "socialnetworks": [
+            {
+                "facebook": [
+                    {
+                        "icon": "<i class='fa-brands fa-facebook sn-facebook'></i>"
+                    },
+                    {
+                        "name": "Cabañas Talavera - Buenavista"
+                    },
+                    {
+                        "link": "https://www.facebook.com/Talaverabuenavista/"
+                    }
+                ]
+            }
+        ],
+        "services": [
+            "Cabañas en alquiler con capacidad para 22 personas",
+            "Piscina",
+            "Churrasqueras",
+            "Horno",
+            "Wifi"
+        ],
+        "location": [
+            {
+                "address": "Se encuentra a 4 minutos con una distancia de 1,3 Km de la Plaza de Buenavista."
+            },
+            {
+                "map_url": "https://www.google.com/maps/dir/-17.460241416593423,-63.66031428880418/-17.463756076118052,-63.650886724731926"
+            }
+        ],
+        "images": [
+            "images/hoteleria/cabanas/08/image01.webp",
+            "images/hoteleria/cabanas/08/image02.webp",
+            "images/hoteleria/cabanas/08/image03.webp",
+            "images/hoteleria/cabanas/08/image04.webp"
+        ]
+    },
+    "PozazulCabañasyCamping": {
+        "title": "Pozazul cabañas & camping",
+        "reservations": [
+            {
+                "Mobile": [
+                    "+591 709 00 708"
+                ]
+            }
+        ],
+        "socialnetworks": [
+            {
+                "facebook": [
+                    {
+                        "icon": "<i class='fa-brands fa-facebook sn-facebook'></i>"
+                    },
+                    {
+                        "name": "Buena Vista - Pozazul Cabañas & Camping"
+                    },
+                    {
+                        "link": "https://www.facebook.com/pozazul.buenavista/"
+                    }
+                ]
+            }
+        ],
+        "services": [
+            "Cabañas para 6 personas y 2 personas.",
+            "Habitaciones cuádruples, con cama matrimonial.",
+            "Área de camping.",
+            "Piscina, Parrillas, parqueo."
+        ],
+        "location": [
+            {
+                "address": "Se encuentra a 3 minutos con una distancia de 800 metros de la Plaza de Buenavista."
+            },
+            {
+                "map_url": "https://www.google.com/maps/dir/-17.460241416593423,-63.66031428880418/-17.454654190689915,-63.66356184232917"
+            }
+        ],
+        "images": [
+            "images/hoteleria/cabanas/09/image01.webp",
+            "images/hoteleria/cabanas/09/image02.webp",
+            "images/hoteleria/cabanas/09/image03.webp",
+            "images/hoteleria/cabanas/09/image04.webp"
+        ]
+    },
+    "CabañaLaQuintaMaravilla": {
+        "title": "Cabaña La Quinta Maravilla",
+        "reservations": [
+            {
+                "Mobile": [
+                    "+591 704 40 618"
+                ]
+            }
+        ],
+        "socialnetworks": [
+            {
+                "facebook": [
+                    {
+                        "icon": "<i class='fa-brands fa-facebook sn-facebook'></i>"
+                    },
+                    {
+                        "name": "Cabaña 'La Quinta Maravilla'"
+                    },
+                    {
+                        "link": "https://www.facebook.com/laquintamaravillasc/"
+                    }
+                ]
+            }
+        ],
+        "services": [
+            "Cabaña para 8 personas",
+            "Piscina",
+            "Churrasqueras",
+            "Comedor"
+        ],
+        "location": [
+            {
+                "address": "Se encuentra a 4 minutos con una distancia de 1.4 Km de la Plaza de Buenavista."
+            },
+            {
+                "map_url": "https://www.google.com/maps/dir/-17.460241416593423,-63.66031428880418/-17.464481117366173,-63.65053002711885"
+            }
+        ],
+        "images": [
+            "images/hoteleria/cabanas/10/image01.webp",
+            "images/hoteleria/cabanas/10/image02.webp",
+            "images/hoteleria/cabanas/10/image03.webp"
+        ]
+    }
+}

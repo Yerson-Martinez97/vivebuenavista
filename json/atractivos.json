@@ -1,0 +1,125 @@
+{
+    "Plazas": {
+        "title": "La Plaza Principal de BuenaVista",
+        "description": "El Corazón de la Comunidad, en el centro de nuestro querido pueblo late la vida misma: la Plaza de Buenavista, un lugar donde la historia, la cultura y la naturaleza se encuentran. \nCon su paseo peatonal, rodeada de frondosos árboles y coloridos jardines, la plaza es el punto de encuentro para locales y visitantes. Aquí se celebran fiestas, se comparten sonrisas y se crean recuerdos inolvidables.\n Al caer la tarde, el ambiente se llena de encanto y el cálido resplandor de la luz del sol realza su belleza. La Plaza es el lugar perfecto para sentarse, disfrutar de un buen café, observar la vida pasar y conectar con la esencia de Buenavista.\n",
+        "images": [
+            "images/atractivos/plaza/image01.webp",
+            "images/atractivos/plaza/image02.webp",
+            "images/atractivos/plaza/image03.webp",
+            "images/atractivos/plaza/image04.webp"
+        ],
+        "location": "https://www.google.com/maps/dir/-17.460241416593423,-63.66031428880418"
+    },
+    "IglesiaSantosDesposorios": {
+        "title": "Iglesia parroquial los santos desposorios",
+        "description": "En este lugar se estableció en el año 1723, la misión Jesuítica de Los Virginales Desposorios de José y María de Buenavista.\n La misión funcionó hasta la expulsión de los Jesuitas en 1767. En seguida fue pastoreada por el Clero secular.\n En 1960 el pastoreo de la Parroquia es confiado a los misioneros de Santiago Apóstol (USA) y en 1961 se destruye la Iglesia Misional y se construye la Iglesia que existe hasta los días de hoy.\n En la actualidad es la Congregación del Espíritu Santo la encargada del pastoreo de la Parroquia.",
+        "images": [
+            "images/atractivos/iglesia/image01.webp",
+            "images/atractivos/iglesia/image02.webp"
+        ],
+        "location": "https://www.google.com/maps/dir/-17.460241416593423,-63.66031428880418/-17.460562837856386, -63.65928009733693"
+    },
+    "RioSurutu": {
+        "title": "Río Surutú",
+        "description": "El río Surutú nace en las laderas del Parque Amboró, donde se unen las quebradas Blanca y Surutú. Desde ahí, el río recorre 89 kilómetros hacia el noroeste, hasta juntarse con el río Alturas del Yapacaní, formando juntos el río Yapacaní.\n A lo largo de su recorrido, el río Surutú tiene muchas playas con arena blanca, perfectas para disfrutar de un chapuzón en sus aguas claras y tranquilas que bajan del Amboró. Es un lugar ideal para pasar un día en familia o hacer un paseo de campo. Por su belleza natural y su ambiente relajado, es uno de los sitios favoritos para los turistas que visitan la zona.",
+        "images": [
+            "images/atractivos/rio/image01.webp",
+            "images/atractivos/rio/image02.webp"
+        ],
+        "location": "https://www.google.com/maps/dir/-17.460241416593423,-63.66031428880418/-17.48408561196665, -63.68076742701011"
+    },
+    "Parque": {
+        "title": "Parque Nacional Amboró",
+        "description": "Se ha consolidado como el punto de partida ideal para aventureros, ecoturistas y amantes de la naturaleza.\n Sus senderos, ríos, montañas y bosques son el escenario perfecto para la observación de aves, caminatas, paseos en bicicleta y otras actividades al aire libre que conectan al visitante con la tierra y su biodiversidad.",
+        "images": [
+            "images/atractivos/parque/image01.webp",
+            "images/atractivos/parque/image02.webp"
+        ]
+    },
+    "Murales": [
+        {
+            "title": "El Oso Jukumari",
+            "description": "Un Compromiso con Nuestros Animales Silvestres.\n El Mural del Oso Jukumari no es solo una obra de arte, es un símbolo que conecta nuestra comunidad con la naturaleza, la cultura y la belleza única de nuestra región.\n El oso andino representa, una especie emblemática y en peligro, que habita en el Parque Nacional Amboró, nuestro tesoro natural.\n Con el paso del tiempo, el mural había perdido parte de su esplendor, pero fue restaurado: Fue un acto de amor por las raíces y una oportunidad para inspirar a quienes visitan Buenavista.",
+            "images": [
+                "images/atractivos/murales/jukumari/image01.webp"
+            ],
+            "location": "https://www.google.com/maps/dir/-17.460241416593423,-63.66031428880418/-17.460561162447608,-63.66117022960458"
+        },
+        {
+            "title": "Con Sabor a Café y Chocolate",
+            "description": "El nuevo mural “Con Sabor a Café y Chocolate”, es una obra que nació del amor por nuestro pueblo y el deseo de embellecer sus calles.\n Inspirado en la riqueza cultural, agrícola y paisajística de Buenavista, este mural se ha convertido en un homenaje al café y el chocolate, dos elementos que representan el alma de nuestra región.",
+            "images": [
+                "images/atractivos/murales/consaboracafeychocolate/image01.webp"
+            ],
+            "location": "https://www.google.com/maps/dir/-17.460241416593423,-63.66031428880418/-17.460910407970953,-63.66048460322536"
+        },
+        {
+            "title": "Buenavista: Ayer y Hoy",
+            "description": "Honrando nuestra historia y mirando al futuro.\n El mural \"Buenavista: Ayer y Hoy\" es un reflejo de nuestra identidad. Es un testimonio visual que captura la esencia de cómo nuestro pueblo ha crecido, evolucionado y, al mismo tiempo, ha sabido conservar sus raíces.",
+            "images": [
+                "images/atractivos/murales/ayeryhoy/image01.webp"
+            ],
+            "location": "https://www.google.com/maps/dir/-17.460241416593423,-63.66031428880418/-17.46053454792603,-63.65894180500107"
+        },
+        {
+            "title": "La Tejedora de Jipi Japa",
+            "description": "El mural \"La Tejedora de Jipi Japa\" es un tributo a una tradición ancestral que define nuestra identidad cultural y celebra la destreza de las manos que dan vida a obras únicas. La tejedora no solo representa un oficio, sino el espíritu de nuestras raíces, nuestra creatividad y nuestra conexión con la naturaleza a través de la palma de jipijapa. Buena Vista ha sido declarada “Capital departamental de la Jipi Japa” debido a la producción artesanal elaborada con esta palmera.",
+            "images": [
+                "images/atractivos/murales/jipijapa/image01.webp"
+            ],
+            "location": "https://www.google.com/maps/dir/-17.460241416593423,-63.66031428880418/-17.459053302163184,-63.66101674537539"
+        },
+        {
+            "title": "Flora y Fauna",
+            "description": "Un mural impresionante que refleja la riqueza natural de Buenavista. 'Flora y Fauna' es una obra de arte renovada que nos sumerge en la diversidad de animales y plantas silvestres de la región. La atención al detalle y la belleza de los colores utilizados hacen que este mural sea una verdadera joya del pueblo. Es ideal para amantes de la naturaleza, el arte y la fotografía.",
+            "images": [
+                "images/atractivos/murales/florayfauna/image01.webp"
+            ],
+            "location": "https://www.google.com/maps/dir/-17.460241416593423,-63.66031428880418/-17.458674437850544,-63.66056129338156"
+        },
+        {
+            "title": "Manifestaciones Artísticas",
+            "description": "Un mural vibrante y lleno de vida que captura la esencia cultural de Buenavista. “Manifestaciones Artísticas” es una obra maestra que nos sumerge en las danzas, costumbres y tradiciones más representativas de la región. La riqueza de detalles y colores es impresionante, y cada elemento del mural parece cobrar vida. Es ideal para amantes del arte, la cultura y la historia local.",
+            "images": [
+                "images/atractivos/murales/manifestacionesartisticas/image01.webp"
+            ],
+            "location": "https://www.google.com/maps/dir/-17.460241416593423,-63.66031428880418/-17.460512292604296,-63.658807639249595"
+        }
+    ],
+    "Mirador": {
+        "title": "Mirador",
+        "description": "Ubicado a tan solo 100 metros de la plaza principal de Buenavista, el Mirador del Amboró es un flamante parque infantil y de esparcimiento cuyo principal atractivo es la hermosa vista de los alrededores del pueblo y de la serranía del Parque Amboro.\n Además cuenta con senderos con mucho verde y vegetación adornados por cascadas de agua y bancas para el descanso familiar y recreativo.",
+        "images": [
+            "images/atractivos/mirador/image01.webp",
+            "images/atractivos/mirador/image02.webp"
+        ],
+        "location": "https://www.google.com/maps/dir/-17.460241416593423,-63.66031428880418/-17.46176103893775, -63.658873150079984"
+    },
+    "RutaCafe": {
+        "title": "Ruta del Café",
+        "description": "Es un paseo guiado que permite al visitante conocer el proceso de transformación que abarca desde su cultivo hasta la ingestión por cualquier persona. Un viaje que cambia no sólo la forma de apreciar el café, sino también el modo de disfrutarlo.\n La Ruta del Café se inicia a pocos metros del Hotel Hacienda El Cafetal.\n Grupos de no más de diez personas siguen las explicaciones de un guía que utiliza frutos maduros, que se les llama guinda, para explicar cómo se obtiene la semilla, que luego se planta en vasijas pequeñas para que germinen.",
+        "images": [
+            "images/atractivos/rutacafe/image01.webp",
+            "images/atractivos/rutacafe/image02.webp"
+        ],
+        "location": "https://www.google.com/maps/dir/-17.460241416593423,-63.66031428880418/-17.465524741602295, -63.695548219488"
+    },
+    "ArteCampo": {
+        "title": "ArteCampo",
+        "description": "Es una asociación de mujeres emprendedoras de Buenavista y de todas las comunidades que se dedican a la elaboración de preciosas artesanías en Jipi Japa, como ser sombreros, joyeros, cigarreras, souvenirs de todo tipo y de lindos colores, también elaboran sabanas y hamacas al igual que artesanías en barro.",
+        "images": [
+            "images/atractivos/artecampo/image01.webp",
+            "images/atractivos/artecampo/image02.webp"
+        ],
+        "location": "https://www.google.com/maps/dir/-17.460241416593423,-63.66031428880418/-17.459002631766687, -63.66099196898846"
+    },
+    "QueseriaSuiza": {
+        "title": "Quesería Suiza",
+        "description": "Qué Incluye el Tour: Transporte, recorrido guiado por nuestra fábrica, historias y secretos de sus recetas suizas, degustación de quesos frescos, actividades interactivas al aire libre.",
+        "images": [
+            "images/atractivos/queseria/image01.webp",
+            "images/atractivos/queseria/image02.webp"
+        ],
+        "location": "https://www.google.com/maps/dir/-17.460241416593423,-63.66031428880418/-17.459002631766687, -63.66099196898846"
+    }
+}

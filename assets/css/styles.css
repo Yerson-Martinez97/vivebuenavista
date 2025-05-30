@@ -1,0 +1,132 @@
+:root {
+    --primary: rgb(77, 107, 105) !important;
+    --primary-dark: rgb(36, 49, 49) !important;
+    --secondary: #fff !important;
+    --background-general: #fff !important;
+    --white: rgb(255, 255, 255) !important;
+    --black: rgb(31, 31, 31) !important;
+    --dark: rgb(29, 41, 29) !important;
+    --blue: rgb(27, 86, 253);
+    --blue-dark: rgb(1, 24, 216);
+    /* FONT SIZES */
+    --fontsize-xs: 0.875rem;
+    /* Extra pequeño */
+    --fontsize-sm: 1rem;
+    /* Pequeño, texto base */
+    --fontsize-md: 1.25rem;
+    /* Medio, subtítulos */
+    --fontsize-lg: 1.5rem;
+    /* Grande, títulos */
+    --fontsize-xl: 2rem;
+    /* Muy grande, encabezados */
+    --fontsize-xxl: 2.5rem;
+    /* Extra grande, hero text */
+    --fontsize-xxxl: 3rem;
+    /* Ultra grande */
+}
+
+/* ================================================================================================== */
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: var(--background-general) !important;
+    letter-spacing: .1rem;
+    word-spacing: normal;
+    font-size: var(--fontsize-sm);
+}
+
+body {
+    font-family: 'Noto Sans', 'Open Sans', sans-serif;
+    font-size: var(--fontsize-normal) !important;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+.p-10px {
+    padding: 10px;
+}
+
+.primary {
+    color: var(--primary) !important;
+}
+
+.secondary {
+    color: var(--secondary) !important;
+}
+
+.btn-general {
+    background-color: red;
+}
+
+.card {}
+
+/* ============================================================================================= */
+/* UP BUTTON */
+#subir {
+    display: none;
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}
+
+.irArriba {
+    z-index: 999;
+    display: block !important;
+    position: fixed;
+    bottom: 50px;
+    right: 2%;
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    background: var(--primary);
+    color: #fff;
+    border: 2px solid var(--secondary);
+    border-radius: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    transform: translateX(0);
+    animation: animacionScrollTo 0.7s ease-out;
+    opacity: 1 !important;
+}
+
+@keyframes animacionScrollTo {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+.irArriba:hover {
+    background: transparent;
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.irArriba.salir {
+    animation: animacionScrollOut 0.5s ease-out forwards;
+}
+
+@keyframes animacionScrollOut {
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+.boxComoLlegar {
+    padding: 50px 25px !important;
+}
+
+.boxAtractivos, .boxArtesanias, .boxHoteleria, .boxFerias, .boxRestaurantes {
+    padding: 50px 0px !important;
+}

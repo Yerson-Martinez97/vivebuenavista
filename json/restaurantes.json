@@ -1,0 +1,243 @@
+{
+    "LaCunumisita": {
+        "title": "Restaurante 'La Cunumisita'",
+        "stars": [
+            "4.0"
+        ],
+        "description": [
+            "Restaurante La Cunumisita ofrece auténtica cocina boliviana en un ambiente rústico y familiar, con decoración en tonos cálidos y amplios espacios, incluido un patio donde suelen jugar los niños. El servicio es reconocido por su cordialidad y eficiencia al atender tanto a familias como a viajeros individuales."
+        ],
+        "opinions": [
+            "Los visitantes elogian especialmente la comida, el ambiente y la cordialidad del personal."
+        ],
+        "businesshours": [
+            "Abre sus puertas todos los días.",
+            [
+                {
+                    "Lunes a Viernes": "7:00 a.m. - 10:30 p.m."
+                },
+                {
+                    "Sábado": "7:00 a.m. - 11:30 p.m."
+                },
+                {
+                    "Domingo": "7:00 a.m. - 10:30 p.m."
+                }
+            ]
+        ],
+        "reservations": [
+            {
+                "Mobile": [
+                    "+591 7577 4509"
+                ]
+            }
+        ],
+        "socialnetworks": [
+            {
+                "facebook": [
+                    {
+                        "icon": "<i class='fa-brands fa-facebook sn-facebook'></i>"
+                    },
+                    {
+                        "name": "La Cunumisita Restaurante"
+                    },
+                    {
+                        "link": "https://www.facebook.com/lacunumicita"
+                    }
+                ]
+            }
+        ],
+        "recommendations": [
+            "Llega temprano para aprovechar el ambiente tranquilo antes de la hora punta (12:00-14:00).",
+            "Consulta al personal por “el plato del día”, suelen tener especialidades según ingredientes frescos disponibles."
+        ],
+        "location": [
+            {
+                "address": "Se encuentra a 15 minutos con una distancia de 1.1 km de la Plaza principal de Buena Vista."
+            },
+            {
+                "map_url": "https://www.google.com/maps/dir/-17.460241416593423,-63.66031428880418/-17.45500009741962,-63.66927261514094"
+            }
+        ],
+        "images": [
+            "images/restaurantes/01/image01.webp",
+            "images/restaurantes/01/image02.webp",
+            "images/restaurantes/01/image03.webp",
+            "images/restaurantes/01/image04.webp"
+        ]
+    },
+    "Lisis": {
+        "title": "Lisis Restaurante",
+        "stars": [
+            "5.0"
+        ],
+        "description": [
+            "Lisis Restaurante es un establecimiento elegante y acogedor, muy apreciado por su ambiente relajante y la atención personalizada de su equipo, liderado por el chef René y Lisis. Los comensales destacan la calidad de la presentación y el servicio atento en cada visita."
+        ],
+        "opinions": [
+            "Los visitantes elogian especialmente la comida, el ambiente y la cordialidad del personal."
+        ],
+        "businesshours": [
+            "Abre sus puertas todos los días.",
+            [
+                {
+                    "Miércoles a Sábado": "11:00 a.m. - 10:00 p.m."
+                },
+                {
+                    "Domingo": "11:00 a.m. - 6:00 p.m."
+                },
+                {
+                    "Lunes y Martes": "Cerrado"
+                }
+            ]
+        ],
+        "reservations": [
+            {
+                "Mobile": [
+                    "+591 766 99 466"
+                ]
+            }
+        ],
+        "socialnetworks": [
+            {
+                "facebook": [
+                    {
+                        "icon": "<i class='fa-brands fa-facebook sn-facebook'></i>"
+                    },
+                    {
+                        "name": "Lisis Restaurant"
+                    },
+                    {
+                        "link": "https://www.facebook.com/people/lisis-restaurant/61564303975930/"
+                    }
+                ]
+            }
+        ],
+        "recommendations": [
+            "Reserva tu mesa con al menos 1-2 días de anticipación.",
+            "Visita en horarios de menor afluencia (entre semana o antes de las 13 :00 o después de las 20 :00).",
+            "Pide sugerencias al personal; suelen tener recomendaciones del día según disponibilidad de ingredientes frescos."
+        ],
+        "location": [
+            {
+                "address": "Se encuentra ubicado exactamente en el centro de la Plaza principal de Buena Vista."
+            },
+            {
+                "map_url": "https://www.google.com/maps/dir/-17.460241416593423,-63.66031428880418/-17.460146556713948,-63.66010884777318"
+            }
+        ],
+        "images": [
+            "images/restaurantes/02/image01.webp",
+            "images/restaurantes/02/image02.webp",
+            "images/restaurantes/02/image03.webp",
+            "images/restaurantes/02/image04.webp"
+        ]
+    },
+    "QueseríaSuiza": {
+        "title": "Quesería Suiza",
+        "stars": [
+            "4.6"
+        ],
+        "description": [
+            "Quesería Suiza es una tienda y pequeño restaurante especializado en quesos artesanales y productos lácteos, elaborado con leche fresca de la región. Ofrecen desde tablas de quesos hasta platos preparados que destacan el sabor y la calidad de sus productos locales."
+        ],
+        "businesshours": [
+            [
+                {
+                    "Lunes a Sábado": "07:30 a.m. - 11:00 p.m."
+                },
+                {
+                    "Domingo": "08:00 a.m. - 11:00 p.m."
+                }
+            ]
+        ],
+        "reservations": [
+            {
+                "Mobile": [
+                    "+591 7988 8324"
+                ]
+            }
+        ],
+        "socialnetworks": [
+            {
+                "facebook": [
+                    {
+                        "icon": "<i class='fa-brands fa-facebook sn-facebook'></i>"
+                    },
+                    {
+                        "name": "Quesería Suiza - Buena Vista"
+                    },
+                    {
+                        "link": "https://www.facebook.com/queseriasuiza.27"
+                    }
+                ]
+            },
+            {
+                "instagram": [
+                    {
+                        "icon": "<i class='fa-brands fa-instagram sn-instagram'></i>"
+                    },
+                    {
+                        "name": "Quesería Suiza"
+                    },
+                    {
+                        "link": "https://www.instagram.com/queseriasuizabo/"
+                    }
+                ]
+            }
+        ],
+        "recommendations": [
+            "Pide la tabla de quesos para degustar varias variedades de la casa.",
+            "Acompaña tus platos con una bebida local o jugo natural.",
+            "Consulta por el “plato del día”; suelen preparar especialidades según la temporada de leche.",
+            "Reserva o avisa con antelación vía WhatsApp, sobre todo fines de semana."
+        ],
+        "location": [
+            {
+                "address": "Se encuentra a 3 minutos con una distancia de 1.1 km de la Plaza principal de Buena Vista."
+            },
+            {
+                "map_url": "https://www.google.com/maps/dir/-17.460241416593423,-63.66031428880418/-17.455088396315904,-63.660449288203885"
+            }
+        ],
+        "images": [
+            "images/restaurantes/03/image01.webp",
+            "images/restaurantes/03/image02.webp",
+            "images/restaurantes/03/image03.webp",
+            "images/restaurantes/03/image04.webp"
+        ]
+    },
+    "LaPascanaDeLosTigres": {
+        "title": "Bar Restaurante La Pascana De Los Tigres",
+        "stars": [
+            "4.1"
+        ],
+        "description": [
+            "Un bar-restaurante de estilo Bar & Grill, ideal para disfrutar de una cena informal con carnes a la parrilla, picadas y una buena selección de bebidas nacionales e internacionales. Ofrece un ambiente relajado, con música de fondo y espacio al aire libre, perfecto para grupos de amigos y eventos pequeños."
+        ],
+        "businesshours": [
+            [
+                {
+                    "Lunes a Domingo": "09:00 a.m. - 11:30 p.m."
+                }
+            ]
+        ],
+        "recommendations": [
+            "Prueba alguna picada mixta para compartir y acompáñala con una cerveza artesanal local.",
+            "Ideal para disfrutar de un coctel al aire libre viendo la plaza iluminada por la noche."
+        ],
+        "location": [
+            {
+                "address": "Se encuentra a 1 minutos con una distancia de 72 metros de la Plaza principal de Buena Vista."
+            },
+            {
+                "map_url": "https://www.google.com/maps/dir/-17.460241416593423,-63.66031428880418/-17.459481172968758,-63.660250526858746"
+            }
+        ],
+        "images": [
+            "images/restaurantes/04/image01.webp",
+            "images/restaurantes/04/image02.webp",
+            "images/restaurantes/04/image03.webp",
+            "images/restaurantes/04/image04.webp"
+        ]
+    }
+}
