@@ -1,18 +1,18 @@
 {
     "JipiJapa": {
         "title": "JipiJapa",
-        "description": "Las manos de hábiles artesanos dan vida a una de las expresiones culturales más representativas del municipio: las artesanías elaboradas con fibra de jipijapa. Este material natural, proveniente de una palma tropical (Carludovica palmata), ha sido utilizado por generaciones para crear piezas únicas que combinan funcionalidad, belleza y tradición.\n Cestos, sombreros, bolsos, abanicos y una gran variedad de artículos decorativos y utilitarios son tejidos con paciencia y dedicación, reflejando la identidad de un pueblo que mantiene viva su herencia cultural. Cada trenzado es una historia, un legado que pasa de padres a hijos y que hoy se transforma en arte para el mundo.\n Adquirir una artesanía de jipijapa es llevar contigo un pedazo del alma de este pueblo, donde el trabajo hecho a mano se valora y se honra.",
+        "description": "<p>Las manos de hábiles artesanos dan vida a una de las expresiones culturales más representativas del municipio: las artesanías elaboradas con fibra de jipijapa. Este material natural, proveniente de una palma tropical (Carludovica palmata), ha sido utilizado por generaciones para crear piezas únicas que combinan funcionalidad, belleza y tradición.</p> <p>Cestos, sombreros, bolsos, abanicos y una gran variedad de artículos decorativos y utilitarios son tejidos con paciencia y dedicación, reflejando la identidad de un pueblo que mantiene viva su herencia cultural. Cada trenzado es una historia, un legado que pasa de padres a hijos y que hoy se transforma en arte para el mundo.</p> <p>Adquirir una artesanía de jipijapa es llevar contigo un pedazo del alma de este pueblo, donde el trabajo hecho a mano se valora y se honra.</p>",
         "images": [
-            "images/artesanias/jipijapa/image01.webp",
-            "images/artesanias/jipijapa/image02.webp"
+            "assets/images/artesanias/jipijapa/image01.webp",
+            "assets/images/artesanias/jipijapa/image02.webp"
         ]
     },
-    "Muebles Rústicos": {
+    "MueblesRusticos": {
         "title": "Muebles Rústicos de Tacuara, Bejucos y Madera",
         "description": "Existen en por la zona de la circunvalación del pueblo varios artesanos que trabajan muy bien la tacuara, madera y bejucos para la realización de una gran variedad de muebles, adornos y utensilios con un acabado bastante rustico y a la vez elegante para todo aquel que desee equipar su hogar con acabados bien llamativos.",
         "images": [
-            "images/artesanias/mueblesrusticos/image01.webp",
-            "images/artesanias/mueblesrusticos/image02.webp"
+            "assets/images/artesanias/mueblesrusticos/image01.webp",
+            "assets/images/artesanias/mueblesrusticos/image02.webp"
         ]
     }
 }

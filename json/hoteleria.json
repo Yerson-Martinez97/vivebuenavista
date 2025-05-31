@@ -44,9 +44,9 @@
             }
         ],
         "images": [
-            "images/hoteleria/alejados/01/image01.webp",
-            "images/hoteleria/alejados/01/image02.webp",
-            "images/hoteleria/alejados/01/image03.webp"
+            "assets/images/hoteleria/alejados/01/image01.webp",
+            "assets/images/hoteleria/alejados/01/image02.webp",
+            "assets/images/hoteleria/alejados/01/image03.webp"
         ]
     },
     "SantaMarialaAntigua": {
@@ -132,10 +132,10 @@
             }
         ],
         "images": [
-            "images/hoteleria/alejados/02/image01.webp",
-            "images/hoteleria/alejados/02/image02.webp",
-            "images/hoteleria/alejados/02/image03.webp",
-            "images/hoteleria/alejados/02/image04.webp"
+            "assets/images/hoteleria/alejados/02/image01.webp",
+            "assets/images/hoteleria/alejados/02/image02.webp",
+            "assets/images/hoteleria/alejados/02/image03.webp",
+            "assets/images/hoteleria/alejados/02/image04.webp"
         ]
     },
     "LaPascanita": {
@@ -183,10 +183,10 @@
             }
         ],
         "images": [
-            "images/hoteleria/cerca/03/image01.webp",
-            "images/hoteleria/cerca/03/image02.webp",
-            "images/hoteleria/cerca/03/image03.webp",
-            "images/hoteleria/cerca/03/image04.webp"
+            "assets/images/hoteleria/cerca/03/image01.webp",
+            "assets/images/hoteleria/cerca/03/image02.webp",
+            "assets/images/hoteleria/cerca/03/image03.webp",
+            "assets/images/hoteleria/cerca/03/image04.webp"
         ]
     },
     "BosqueDeAngeles": {
@@ -223,14 +223,14 @@
             }
         ],
         "images": [
-            "images/hoteleria/cerca/04/image01.webp",
-            "images/hoteleria/cerca/04/image02.webp",
-            "images/hoteleria/cerca/04/image03.webp",
-            "images/hoteleria/cerca/04/image04.webp"
+            "assets/images/hoteleria/cerca/04/image01.webp",
+            "assets/images/hoteleria/cerca/04/image02.webp",
+            "assets/images/hoteleria/cerca/04/image03.webp",
+            "assets/images/hoteleria/cerca/04/image04.webp"
         ]
     },
     "PosadaElCarmen": {
-        "title": "Hotel posada El Carmen",
+        "title": "Hotel Posada El Carmen",
         "reservations": [
             {
                 "Landline": [
@@ -263,9 +263,9 @@
             }
         ],
         "images": [
-            "images/hoteleria/cerca/05/image01.webp",
-            "images/hoteleria/cerca/05/image02.webp",
-            "images/hoteleria/cerca/05/image03.webp"
+            "assets/images/hoteleria/cerca/05/image01.webp",
+            "assets/images/hoteleria/cerca/05/image02.webp",
+            "assets/images/hoteleria/cerca/05/image03.webp"
         ]
     },
     "HostalJardinDeMargarita": {
@@ -290,9 +290,9 @@
             }
         ],
         "images": [
-            "images/hoteleria/cerca/06/image01.webp",
-            "images/hoteleria/cerca/06/image02.webp",
-            "images/hoteleria/cerca/06/image03.webp"
+            "assets/images/hoteleria/cerca/06/image01.webp",
+            "assets/images/hoteleria/cerca/06/image02.webp",
+            "assets/images/hoteleria/cerca/06/image03.webp"
         ]
     },
     "HostalBuenaVista": {
@@ -336,9 +336,9 @@
             }
         ],
         "images": [
-            "images/hoteleria/cerca/07/image01.webp",
-            "images/hoteleria/cerca/07/image02.webp",
-            "images/hoteleria/cerca/07/image03.webp"
+            "assets/images/hoteleria/cerca/07/image01.webp",
+            "assets/images/hoteleria/cerca/07/image02.webp",
+            "assets/images/hoteleria/cerca/07/image03.webp"
         ]
     },
     "CabañaTalavera": {
@@ -381,14 +381,14 @@
             }
         ],
         "images": [
-            "images/hoteleria/cabanas/08/image01.webp",
-            "images/hoteleria/cabanas/08/image02.webp",
-            "images/hoteleria/cabanas/08/image03.webp",
-            "images/hoteleria/cabanas/08/image04.webp"
+            "assets/images/hoteleria/cabanas/08/image01.webp",
+            "assets/images/hoteleria/cabanas/08/image02.webp",
+            "assets/images/hoteleria/cabanas/08/image03.webp",
+            "assets/images/hoteleria/cabanas/08/image04.webp"
         ]
     },
     "PozazulCabañasyCamping": {
-        "title": "Pozazul cabañas & camping",
+        "title": "Pozazul Cabañas & Camping",
         "reservations": [
             {
                 "Mobile": [
@@ -426,10 +426,10 @@
             }
         ],
         "images": [
-            "images/hoteleria/cabanas/09/image01.webp",
-            "images/hoteleria/cabanas/09/image02.webp",
-            "images/hoteleria/cabanas/09/image03.webp",
-            "images/hoteleria/cabanas/09/image04.webp"
+            "assets/images/hoteleria/cabanas/09/image01.webp",
+            "assets/images/hoteleria/cabanas/09/image02.webp",
+            "assets/images/hoteleria/cabanas/09/image03.webp",
+            "assets/images/hoteleria/cabanas/09/image04.webp"
         ]
     },
     "CabañaLaQuintaMaravilla": {
@@ -471,9 +471,9 @@
             }
         ],
         "images": [
-            "images/hoteleria/cabanas/10/image01.webp",
-            "images/hoteleria/cabanas/10/image02.webp",
-            "images/hoteleria/cabanas/10/image03.webp"
+            "assets/images/hoteleria/cabanas/10/image01.webp",
+            "assets/images/hoteleria/cabanas/10/image02.webp",
+            "assets/images/hoteleria/cabanas/10/image03.webp"
         ]
     }
 }

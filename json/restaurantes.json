@@ -59,10 +59,10 @@
             }
         ],
         "images": [
-            "images/restaurantes/01/image01.webp",
-            "images/restaurantes/01/image02.webp",
-            "images/restaurantes/01/image03.webp",
-            "images/restaurantes/01/image04.webp"
+            "assets/images/restaurantes/01/image01.webp",
+            "assets/images/restaurantes/01/image02.webp",
+            "assets/images/restaurantes/01/image03.webp",
+            "assets/images/restaurantes/01/image04.webp"
         ]
     },
     "Lisis": {
@@ -126,10 +126,10 @@
             }
         ],
         "images": [
-            "images/restaurantes/02/image01.webp",
-            "images/restaurantes/02/image02.webp",
-            "images/restaurantes/02/image03.webp",
-            "images/restaurantes/02/image04.webp"
+            "assets/images/restaurantes/02/image01.webp",
+            "assets/images/restaurantes/02/image02.webp",
+            "assets/images/restaurantes/02/image03.webp",
+            "assets/images/restaurantes/02/image04.webp"
         ]
     },
     "QueseríaSuiza": {
@@ -200,10 +200,10 @@
             }
         ],
         "images": [
-            "images/restaurantes/03/image01.webp",
-            "images/restaurantes/03/image02.webp",
-            "images/restaurantes/03/image03.webp",
-            "images/restaurantes/03/image04.webp"
+            "assets/images/restaurantes/03/image01.webp",
+            "assets/images/restaurantes/03/image02.webp",
+            "assets/images/restaurantes/03/image03.webp",
+            "assets/images/restaurantes/03/image04.webp"
         ]
     },
     "LaPascanaDeLosTigres": {
@@ -234,10 +234,10 @@
             }
         ],
         "images": [
-            "images/restaurantes/04/image01.webp",
-            "images/restaurantes/04/image02.webp",
-            "images/restaurantes/04/image03.webp",
-            "images/restaurantes/04/image04.webp"
+            "assets/images/restaurantes/04/image01.webp",
+            "assets/images/restaurantes/04/image02.webp",
+            "assets/images/restaurantes/04/image03.webp",
+            "assets/images/restaurantes/04/image04.webp"
         ]
     }
 }

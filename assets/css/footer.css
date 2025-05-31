@@ -1,0 +1,40 @@
+.footer {
+    padding: 25px;
+}
+
+.boxTextFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxTextFooter p {
+    margin-bottom: 0;
+    color: var(--primary);
+}
+
+.boxTextFooter p a {
+    color: var(--primary);
+}
+
+.boxTextFooter p a:hover {
+    color: var(--primary);
+    transition: 0.4s;
+}
+
+.boxTextFooter span {
+    color: var(--primary);
+}
+
+#year {
+    color: var(--primary);
+}
+
+@media screen and (max-width:400px) {
+    footer {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}

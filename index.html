@@ -29,11 +29,19 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <!-- FONTS -->
-    <link rel="stylesheet" type="text/css" href="icons/icomoon.css">
+    <link rel="stylesheet" type="text/css" href="assets/icons/icomoon.css">
     <link rel="stylesheet" href="assets/css/fonts.css">
 
 
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/comollegar.css">
+    <!-- <link rel="stylesheet" href="assets/css/atractivos.css"> -->
+    <link rel="stylesheet" href="assets/css/artesanias.css">
+    <link rel="stylesheet" href="assets/css/hoteleria.css">
+    <link rel="stylesheet" href="assets/css/restaurantes.css">
+    <link rel="stylesheet" href="assets/css/ferias.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
 
     <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-60NM5HJRQ1"></script> -->
     <script>
@@ -50,20 +58,136 @@
 <body>
     <!-- Contenedor Header -->
     <header id="linkHome">
-        <nav>
+        <nav id="navFixed" class="navbar fixed-top navbar-expand-lg p-10px" data-aos="fade-down" data-aos-delay="100">
+            <a class="navbar-brand" href="#linkHome"><i class="fa-solid fa-mountain-sun fa-lg"></i> Vive
+                <small>BuenaVista</small></a>
 
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars toggler-icons"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link scroll" href="#linkHome">Bienvenida</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scroll" href="#linkComoLlegar">Como Llegar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scroll" href="#linkAtractivos">Atractivos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scroll" href="#linkArtesanias">Artesanías</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scroll" href="#linkHoteleria">Hotelería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scroll" href="#linkRestaurantes">Restaurantes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scroll" href="#linkFerias">Ferias</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
-        <section>
-
+        <section id="linkWelcome" class="containerWelcome" data-aos="zoom-in" data-aos-="0">
+            <div class="hero">
+                <div class="text-block" data-aos="fade-up">
+                    <h1 class="title">Donde empieza tu aventura</h1>
+                    <h2 class="subtitle">Descubre BuenaVista, un lugar lleno de historia, cultura y naturaleza en
+                        Santa Cruz. Vive su encanto auténtico y su calidez única. ¡Te esperamos!.</h2>
+                </div>
+                <!-- <a class="btn-general" data-aos="fade-up">
+                    <span>
+                        <i class="fa-solid fa-shoe-prints fa-rotate-90 fa-lg"></i>
+                        ¿Cómo Llegar?</span>
+                </a> -->
+                <div class="button-wrapper">
+                    <a class="button">
+                        <i class="fa-solid fa-shoe-prints fa-rotate-90 fa-lg"></i>
+                        ¿Cómo Llegar?
+                    </a>
+                </div>
+            </div>
         </section>
     </header>
+    <script>
+        window.addEventListener("load", function () {
+            const navbar = document.getElementById("navFixed");
+            const linkHome = document.getElementById("linkHome");
+
+            navbar.classList.add("light");
+
+            window.addEventListener("scroll", function () {
+                // Obtener la posición de la sección linkHome
+                const linkHomeTop = linkHome.offsetTop;
+                const linkHomeHeight = linkHome.offsetHeight - 100;
+
+                // Si estamos dentro de la sección linkHome
+                if (window.scrollY >= linkHomeTop && window.scrollY <= (linkHomeTop + linkHomeHeight)) {
+                    navbar.classList.add("light");
+                    navbar.classList.remove("solid");
+                } else {
+                    navbar.classList.add("solid");
+                    navbar.classList.remove("light");
+                }
+            });
+        });
+
+    </script>
     <!-- Fin Contenedor Header -->
 
     <!-- Contenedor Main -->
     <main>
+        <a id="subir" class="icon-arrow-up scroll" href="#linkHome"></a>
         <!-- Sección Como Llegar -->
-        <section>
-            lorem20000
+        <section id="linkComoLlegar" class="containerComoLlegar">
+            <div class="groupComoLlegar">
+                <h2 class="title">¿Cómo llegar a <span class="primary"><strong>Buena Vista</strong></span>?</h2>
+                <p class="subtitle">Llega fácil desde Santa Cruz y empieza tu aventura.</p>
+
+                <div class="info-block">
+                    <div class="icon-box">
+                        <!-- Bus Icon -->
+                        <i class="fa-solid fa-bus fa-lg"></i>
+                    </div>
+                    <div class="info-text">
+                        <p>Punto de Salida</p>
+                        <p>Ex Terminal <strong>“La Ramada”</strong></p>
+                    </div>
+                </div>
+                <div class="info-block">
+                    <div class="icon-box">
+                        <!-- Clock Icon -->
+                        <i class="fa-solid fa-clock fa-lg"></i>
+                    </div>
+                    <div class="info-text">
+                        <p>Duración</p>
+                        <p><strong>1h 54min</strong> (aproximado)</p>
+                    </div>
+                </div>
+
+                <div class="info-block">
+                    <div class="icon-box">
+                        <!-- Money Icon -->
+                        <i class="fa-solid fa-coins"></i>
+                    </div>
+                    <div class="info-text">
+                        <p>Costo</p>
+                        <p>Bs. 28</p>
+                    </div>
+                </div>
+            </div>
+            <div class="button-wrapper">
+                <a href="https://www.google.com/maps/dir/-17.793705595969545,-63.18821008311444/-17.460241416593423,-63.66031428880418"
+                    target="_blank" class="button">
+                    <i class="fa-solid fa-location-dot fa-xl"></i>
+                    Ver Ruta
+                </a>
+            </div>
         </section>
         <!-- Fin Sección Como Llegar -->
         <!-- Sección Atractivos -->
@@ -72,24 +196,367 @@
         </section>
         <!-- Fin Sección Atractivos -->
         <!-- Sección Artesanias -->
-        <section>
-
+        <section id="linkArtesanias" class="containerArtesanias">
+            <h2 class="section-title">Artesanías</h2>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-img"
+                        style="background-image: url('assets/images/artesanias/jipijapa/image01.webp');"></div>
+                    <div class="card-body">
+                        <p class="card-title" title="JipiJapa">JipiJapa</p>
+                        <p class="card-description">Las manos de hábiles artesanos dan vida a una de las expresiones
+                            culturales más representativas del municipio...</p>
+                        <div class="spacer"></div>
+                        <div class="button-wrapper">
+                            <button class="button" data-idArtesania="JipiJapa">Ver Más...</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img"
+                        style="background-image: url('assets/images/artesanias/mueblesrusticos/image01.webp');"></div>
+                    <div class="card-body">
+                        <p class="card-title" title="Muebles Rústicos de Tacuara, Bejucos y Madera">Muebles Rústicos de
+                            Tacuara, Bejucos y Madera</p>
+                        <p class="card-description">Existen en por la zona de la circunvalación del pueblo varios
+                            artesanos que trabajan muy bien la tacuara...</p>
+                        <div class="spacer"></div>
+                        <div class="button-wrapper">
+                            <button class="button" data-idArtesania="MueblesRusticos">Ver Más...</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
+        <div class="modalArtesania" id="modalArtesania">
+            <div class="modal-content">
+                <button id="modalArtesania-close" class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+
+                <h1 id="modalArtesania-title" class="title">Título</h1>
+                <p id="modalArtesania-description" class="description">
+                    Párrafo
+                </p>
+                <div id="modalArtesania-images" class="scroll-container"> </div>
+            </div>
+        </div>
         <!-- Fin Sección Artesanias -->
-        <!-- Sección Hoteleria -->
-        <section>
 
+        <!-- Sección Hoteleria -->
+        <section id="linkHoteleria" class="containerHoteleria">
+            <h2 class="section-title">Hotelería</h2>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-img"
+                        style="background-image: url('assets/images/hoteleria/alejados/01/image01.webp');"></div>
+                    <div class="card-body">
+                        <p class="card-title" title="Hotel Hacienda El Cafetal">Hotel Hacienda El Cafetal</p>
+                        <p class="card-description"></p>
+                        <div class="spacer"></div>
+                        <div class="button-wrapper">
+                            <button class="button" data-idHoteleria="HaciendaElCafetal">Ver Más...</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img"
+                        style="background-image: url('assets/images/hoteleria/alejados/02/image02.webp');"></div>
+                    <div class="card-body">
+                        <p class="card-title" title="Hotel Santa María la Antigua">Hotel Santa María la
+                            Antigua</p>
+                        <p class="card-description"></p>
+                        <div class="spacer"></div>
+                        <div class="button-wrapper">
+                            <button class="button" data-idHoteleria="SantaMarialaAntigua">Ver Más...</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img"
+                        style="background-image: url('assets/images/hoteleria/cerca/03/image01.webp');"></div>
+                    <div class="card-body">
+                        <p class="card-title" title="La Pascanita Hostal">La Pascanita Hostal</p>
+                        <p class="card-description"></p>
+                        <div class="spacer"></div>
+                        <div class="button-wrapper">
+                            <button class="button" data-idHoteleria="LaPascanita">Ver Más...</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img"
+                        style="background-image: url('assets/images/hoteleria/cerca/04/image03.webp');"></div>
+                    <div class="card-body">
+                        <p class="card-title" title="Bosque de ángeles">Bosque de ángeles</p>
+                        <p class="card-description"></p>
+                        <div class="spacer"></div>
+                        <div class="button-wrapper">
+                            <button class="button" data-idHoteleria="BosqueDeAngeles">Ver Más...</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img"
+                        style="background-image: url('assets/images/hoteleria/cerca/05/image03.webp');"></div>
+                    <div class="card-body">
+                        <p class="card-title" title="Hotel Posada El Carmen">Hotel Posada El Carmen</p>
+                        <p class="card-description"></p>
+                        <div class="spacer"></div>
+                        <div class="button-wrapper">
+                            <button class="button" data-idHoteleria="PosadaElCarmen">Ver Más...</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img"
+                        style="background-image: url('assets/images/hoteleria/cerca/06/image02.webp');"></div>
+                    <div class="card-body">
+                        <p class="card-title" title="Hostal El Jardín de Margarita">Hostal El Jardín de Margarita</p>
+                        <p class="card-description"></p>
+                        <div class="spacer"></div>
+                        <div class="button-wrapper">
+                            <button class="button" data-idHoteleria="HostalJardinDeMargarita">Ver Más...</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img"
+                        style="background-image: url('assets/images/hoteleria/cerca/07/image01.webp');"></div>
+                    <div class="card-body">
+                        <p class="card-title" title="Hostal Buena Vista">Hostal Buena Vista</p>
+                        <p class="card-description"></p>
+                        <div class="spacer"></div>
+                        <div class="button-wrapper">
+                            <button class="button" data-idHoteleria="HostalBuenaVista">Ver Más...</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img"
+                        style="background-image: url('assets/images/hoteleria/cabanas/08/image01.webp');"></div>
+                    <div class="card-body">
+                        <p class="card-title" title="Cabañas Talavera">Cabañas Talavera</p>
+                        <p class="card-description"></p>
+                        <div class="spacer"></div>
+                        <div class="button-wrapper">
+                            <button class="button" data-idHoteleria="CabañaTalavera">Ver Más...</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img"
+                        style="background-image: url('assets/images/hoteleria/cabanas/09/image01.webp');"></div>
+                    <div class="card-body">
+                        <p class="card-title" title="Pozazul Cabañas & Camping">Pozazul Cabañas & Camping</p>
+                        <p class="card-description"></p>
+                        <div class="spacer"></div>
+                        <div class="button-wrapper">
+                            <button class="button" data-idHoteleria="PozazulCabañasyCamping">Ver Más...</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img"
+                        style="background-image: url('assets/images/hoteleria/cabanas/10/image01.webp');"></div>
+                    <div class="card-body">
+                        <p class="card-title" title="Cabaña La Quinta Maravilla">Cabaña La Quinta Maravilla</p>
+                        <p class="card-description"></p>
+                        <div class="spacer"></div>
+                        <div class="button-wrapper">
+                            <button class="button" data-idHoteleria="CabañaLaQuintaMaravilla">Ver Más...</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
+        <div class="modalHoteleria" id="modalHoteleria">
+            <div class="modal-content">
+                <button id="modalHoteleria-close" class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+
+                <h1 id="modalHoteleria-title" class="title">Título</h1>
+                <div id="modalHoteleria-services" class="services">
+                    Servicios
+                </div>
+                <div id="modalHoteleria-images" class="scroll-container"> </div>
+                <div id="modalHoteleria-reservations" class="reservations">Reservas </div>
+                <div id="modalHoteleria-atractions" class="atractions">Atracciones</div>
+                <div class="modalHoteleria-location">
+                    <div id="restaurante-location__title">Dirección</div>
+                    <div id="restaurante-location__address"></div>
+                    <div class="button-wrapper">
+                        <a id="modalHoteleria-btnMap" class="button" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-solid fa-location-dot fa-xl"></i>
+                            Ver Ruta
+                        </a>
+                    </div>
+                </div>
+                <div id="modalHoteleria-socialnetworks"></div>
+                <a id="modalHoteleria-website" href="" target="_blank" rel="noopener noreferrer">Sitio Web</a>
+            </div>
+        </div>
         <!-- Fin Sección Hoteleria -->
         <!-- Sección Restaurante -->
-        <section>
-
+        <section id="linkRestaurantes" class="containerRestaurantes">
+            <h2 class="section-title">Restaurantes</h2>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-img" style="background-image: url('assets/images/restaurantes/01/image04.webp');">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-title" title="Restaurante 'La Cunumisita'">Restaurante 'La Cunumisita'</p>
+                        <p class="card-description"></p>
+                        <div class="spacer"></div>
+                        <div class="button-wrapper">
+                            <button class="button" data-idRestaurante="LaCunumisita">Ver Más...</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img" style="background-image: url('assets/images/restaurantes/02/image01.webp');">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-title" title="Lisis Restaurante">Lisis Restaurante</p>
+                        <p class="card-description"></p>
+                        <div class="spacer"></div>
+                        <div class="button-wrapper">
+                            <button class="button" data-idRestaurante="Lisis">Ver Más...</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img" style="background-image: url('assets/images/restaurantes/03/image01.webp');">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-title" title="Quesería Suiza">Quesería Suiza</p>
+                        <p class="card-description"></p>
+                        <div class="spacer"></div>
+                        <div class="button-wrapper">
+                            <button class="button" data-idRestaurante="QueseríaSuiza">Ver Más...</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img" style="background-image: url('assets/images/restaurantes/04/image01.webp');">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-title" title="Bar Restaurante La Pascana De Los Tigres">Bar Restaurante La
+                            Pascana De Los Tigres</p>
+                        <p class="card-description"></p>
+                        <div class="spacer"></div>
+                        <div class="button-wrapper">
+                            <button class="button" data-idRestaurante="LaPascanaDeLosTigres">Ver Más...</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
+        <div class="modalRestaurante" id="modalRestaurante">
+            <div class="modal-content">
+                <button id="modalRestaurante-close" class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+
+                <h1 id="modalRestaurante-title" class="title">Título</h1>
+                <div id="modalRestaurante-services" class="services">
+                    Servicios
+                </div>
+                <div id="modalRestaurante-images" class="scroll-container"> </div>
+                <div id="modalRestaurante-reservations" class="reservations">Reservas </div>
+                <div id="modalRestaurante-atractions" class="atractions">Atracciones</div>
+                <div class="modalRestaurante-location">
+                    <div id="restaurante-location__title">Dirección</div>
+                    <div id="restaurante-location__address"></div>
+                    <div class="button-wrapper">
+                        <a id="modalRestaurante-btnMap" class="button" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-solid fa-location-dot fa-xl"></i>
+                            Ver Ruta
+                        </a>
+                    </div>
+                </div>
+                <div id="modalRestaurante-socialnetworks"></div>
+                <a id="modalRestaurante-website" href="" target="_blank" rel="noopener noreferrer">Sitio Web</a>
+            </div>
+        </div>
         <!-- Fin Sección Restaurante -->
         <!-- Sección Ferias -->
-        <section>
-
+        <section id="linkFerias" class="containerFerias">
+            <h2 class="section-title">Ferias y Festivos</h2>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-img" style="background-image: url('assets/images/ferias/');"></div>
+                    <div class="card-body">
+                        <p class="card-title" title="Festival Nacional del Café">Festival Nacional del Café</p>
+                        <p class="card-description">El Festival Nacional del Café en Buena Vista es un evento que
+                            celebra la producción cafetalera de la región.\n Entre sus actividades destacan:</p>
+                        <div class="spacer"></div>
+                        <div class="button-wrapper">
+                            <button class="button" data-idFeria="FestivalNacionalDelCafe">Ver Más...</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img" style="background-image: url('assets/images/ferias/');"></div>
+                    <div class="card-body">
+                        <p class="card-title" title="Misa de Campaña">Misa de Campaña</p>
+                        <p class="card-description">La misa de campaña es una ceremonia religiosa que se celebra al aire
+                            libre, comúnmente en el campo o en plazas públicas.</p>
+                        <div class="spacer"></div>
+                        <div class="button-wrapper">
+                            <button class="button" data-idFeria="MisaDeCampaña">Ver Más...</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img" style="background-image: url('assets/images/ferias/');"></div>
+                    <div class="card-body">
+                        <p class="card-title" title="Feria De Ganado">Feria De Ganado</p>
+                        <p class="card-description">En San Pedro de Buena Vista, se celebra el "Toro Tinku", la mayor
+                            feria ganadera de la región norte de Potosí....</p>
+                        <div class="spacer"></div>
+                        <div class="button-wrapper">
+                            <button class="button" data-idFeria="FeriaDeGanado">Ver Más...</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img" style="background-image: url('assets/images/ferias/');"></div>
+                    <div class="card-body">
+                        <p class="card-title" title="Café de la Siesta">Romería con Carretas y
+                            Grupos Folclóricos</p>
+                        <p class="card-description">Las romerías en Buena Vista son procesiones religiosas en las que
+                            los santos patronos son acompañados por carretas decoradas y grupos folclóricos</p>
+                        <div class="spacer"></div>
+                        <div class="button-wrapper">
+                            <button class="button" data-idFeria="RomeríaConCarretasYGruposFolcloricos">Ver
+                                Más...</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img" style="background-image: url('assets/images/ferias/');"></div>
+                    <div class="card-body">
+                        <p class="card-title" title="Café de la Siesta">Café de la Siesta</p>
+                        <p class="card-description">El 'Café de la Siesta' es una tradición local que consiste en
+                            disfrutar de una taza de café durante la tarde, especialmente después del almuerzo.</p>
+                        <div class="spacer"></div>
+                        <div class="button-wrapper">
+                            <button class="button" data-idFeria="CafeDeLaSiesta">Ver
+                                Más...</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
+        <div class="modalFeria" id="modalFeria">
+            <div class="modal-content">
+                <button id="modalFeria-close" class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+
+                <h1 id="modalFeria-title" class="title">Título</h1>
+                <p id="modalFeria-description" class="description">
+                    Descripción
+                </p>
+                <p id="modalFeria-event" class="description">
+                    Evento
+                </p>
+            </div>
+        </div>
         <!-- Fin Sección Ferias -->
     </main>
     <!-- Fin Contenedor Main -->
@@ -109,6 +576,7 @@
 
     <!-- LIBRARIES -->
     <script src="libraries/jquery/jquery-3.3.1.slim.min.js"></script>
+    <!-- POPPER -->
     <script src="libraries/poppers/popper.min.js"></script>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
@@ -119,7 +587,13 @@
     <!-- AOS -->
     <script src="libraries/aos/aos.js"></script>
     <script src="libraries/aos/config.js"></script>
+    <!-- APP -->
     <script src="js/app.js"></script>
+    <script src="js/modalArtesania.js" type="module"></script>
+    <script src="js/modalHoteleria.js" type="module"></script>
+    <script src="js/modalRestaurante.js" type="module"></script>
+    <script src="js/modalFeria.js" type="module"></script>
+
 </body>
 
 </html>

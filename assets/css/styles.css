@@ -1,9 +1,12 @@
 :root {
     --primary: rgb(77, 107, 105) !important;
+    --primary-soft: rgba(77, 107, 105, 0.5) !important;
     --primary-dark: rgb(36, 49, 49) !important;
     --secondary: #fff !important;
     --background-general: #fff !important;
-    --white: rgb(255, 255, 255) !important;
+    --light: rgb(255, 255, 255) !important;
+    --light-soft: #f8fafc !important;
+    --background-soft: #f8fafc !important;
     --black: rgb(31, 31, 31) !important;
     --dark: rgb(29, 41, 29) !important;
     --blue: rgb(27, 86, 253);
@@ -64,11 +67,154 @@ a, a:hover {
     color: var(--secondary) !important;
 }
 
-.btn-general {
-    background-color: red;
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 12px 16px;
 }
 
-.card {}
+.button-wrapper .button {
+    background-color: var(--primary);
+    color: var(--secondary);
+    font-weight: bold;
+    font-size: var(--fontsize-md);
+    padding: 18px 32px;
+    min-height: 40px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 10px var(--primary-dark);
+    gap: 8px;
+}
+
+.button-wrapper .button:hover {
+    background-color: var(--primary-dark);
+}
+
+/* Services */
+.services {
+    /* border: 5px double var(--primary); */
+    background-color: var(--background-soft);
+    padding: 20px 40px;
+    margin-bottom: 20px;
+}
+
+/* Atractions */
+.atractions {
+    /* border: 5px double var(--primary); */
+    background-color: var(--background-soft);
+    padding: 20px 40px;
+    margin-bottom: 20px;
+}
+
+/* Reservations */
+.reservations {
+    /* border: 10px double var(--primary); */
+    color: var(--primary);
+    font-size: var(--fontsize-sm);
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.reservation-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    /* <-- ESTIRA LOS ELEMENTOS PARA IGUALAR ALTURA */
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.reservation-container .fixed-container {
+    outline: none;
+    /* border-right: 10px double var(--primary); */
+    flex: 1;
+    /* Toma el 50% del espacio disponible */
+    height: 100%;
+}
+
+.fixed-container,
+.mobile-container {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 2px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-soft);
+    /* Para que su contenido no rompa el layout */
+}
+
+.mobile-container {
+    flex: 1;
+    /* Toma el 50% del espacio disponible */
+}
+
+.mobile-container strong, .fixed-container strong {
+    font-size: var(--fontsize-md);
+}
+
+@media (max-width: 768px) {
+    .reservation-container {
+        flex-direction: column;
+        /* Cambiar a columna para pantallas pequeñas */
+        gap: 15px;
+        /* Reducir el espacio entre los bloques */
+    }
+
+    .fixed-container,
+    .mobile-container {
+        max-width: 100%;
+        /* Para que tomen el ancho completo en móviles */
+    }
+
+    /* Ajustar el tamaño de fuente para pantallas pequeñas */
+    #modalHoteleria-reservations {
+        font-size: 1.2rem;
+    }
+
+    #modalHoteleria-reservations a, #modalHoteleria-reservations p {
+        font-size: 1rem;
+    }
+
+    #modalHoteleria-reservations .sn-whatsapp {
+        font-size: 1.8rem;
+        /* Hacer un poco más pequeño el ícono */
+    }
+}
+
+/* MEDIA QUERY PARA PANTALLAS MUY PEQUEÑAS (Móviles más pequeños) */
+@media (max-width: 480px) {
+    #modalHoteleria-reservations {
+        font-size: 1rem;
+        /* Reducir el tamaño de fuente aún más en pantallas pequeñas */
+    }
+
+    #modalHoteleria-reservations a, #modalHoteleria-reservations p {
+        font-size: 0.9rem;
+        /* Ajustar el tamaño de fuente */
+    }
+
+    #modalHoteleria-reservations .sn-whatsapp {
+        font-size: 1.6rem;
+        /* Reducir el ícono en pantallas aún más pequeñas */
+    }
+}
+
+/* ICONS */
+.reservations .sn-whatsapp {
+    margin: none;
+    color: #128c7e;
+    font-size: var(--fontsize-lg);
+}
 
 /* ============================================================================================= */
 /* UP BUTTON */
@@ -88,8 +234,8 @@ a, a:hover {
     height: 50px;
     padding: 15px;
     background: var(--primary);
-    color: #fff;
-    border: 2px solid var(--secondary);
+    color: var(--primary) !important;
+    border: 2px solid var(--light);
     border-radius: 50px;
     font-size: 18px;
     cursor: pointer;

@@ -1,0 +1,189 @@
+/* ============================================================================================= */
+/* HEADER */
+header {
+    /* min-height: 100vh; */
+    max-width: 100vw;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ============================================================================================= */
+/* NAVBAR */
+.navbar {
+    box-shadow: 0 2px 20px 2px var(--primary);
+    transition: background-color 0.5s ease;
+}
+
+.navbar.light,
+.navbar.solid {
+    background-color: var(--secondary) !important;
+}
+
+.navbar-brand {
+    font-size: var(--fontsize-medium);
+    color: var(--primary) !important;
+}
+
+.navbar-brand small {
+    font-size: var(--fontsize-medium);
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.nav-link {
+    color: var(--primary) !important;
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid var(--primary);
+}
+
+.navbar-toggler {
+    border: none;
+    background-color: transparent;
+}
+
+i.toggler-icons {
+    color: var(--primary);
+    font-size: var(--fontsize-big);
+}
+
+.navbar-toggler:active,
+.navbar-toggler:focus {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.current {
+    border-bottom: 2px solid var(--primary);
+}
+
+/* ==================== NAVBAR RESPONSIVE ==================== */
+@media screen and (max-width: 992px) {
+    .navbar-brand {
+        display: block;
+    }
+
+    .nav-link:hover {
+        border-bottom: none;
+        background-color: transparent;
+    }
+
+    .nav-item {
+        text-align: center;
+    }
+
+    .current {
+        border: none;
+        background-color: var(--primary) !important;
+        color: var(--secondary) !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-nav {
+        padding: 10px 0;
+    }
+
+    .nav-item {
+        margin-bottom: 10px;
+    }
+}
+
+/* ============================================================================================= */
+/* WELCOME SECTION */
+.containerWelcome {
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+@media (max-width: 480px) {
+    .containerWelcome {
+        padding: 0;
+    }
+}
+
+@media (min-width: 480px) {
+    .containerWelcome {
+        padding: 3rem 1rem 0 1rem;
+    }
+
+    .containerWelcome .hero {
+        border-radius: 1rem;
+        gap: 2rem;
+    }
+
+    .containerWelcome .title {
+        font-size: var(--fontsize-xxxl);
+    }
+
+    .containerWelcome .subtitle {
+        font-size: var(--fontsize-sm);
+    }
+
+    .button {
+        height: 3rem;
+        padding: 0 1.25rem;
+        font-size: 1rem;
+    }
+}
+
+/* ==================== HERO ==================== */
+.containerWelcome .hero {
+    width: 100%;
+    min-height: 400px;
+    background-image:
+        /* linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), */
+        url("../images/welcome/buenavista.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    color: var(--light);
+}
+
+/* ==================== TEXT BLOCK ==================== */
+.containerWelcome .text-block {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.containerWelcome .title {
+    font-size: var(--fontsize-xl);
+    font-weight: 900;
+    line-height: 1.2;
+    letter-spacing: -0.033em;
+    text-shadow: 0 1px 20px rgb(0, 0, 0) !important;
+}
+
+.containerWelcome .subtitle {
+    font-size: var(--fontsize-sm);
+    font-weight: 400;
+    line-height: 1.5;
+    text-shadow: 0 1px 10px rgb(0, 0, 0) !important;
+}
+
+/* .containerWelcome a.btn-general {
+    background-color: var(--secondary);
+    color: var(--primary);
+    box-shadow: 0px 5px 5px var(--primary);
+}
+
+.containerWelcome a.btn-general:hover {
+    color: var(--primary-dark);
+} */

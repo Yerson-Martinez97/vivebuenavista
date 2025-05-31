@@ -1,0 +1,240 @@
+.containerArtesanias {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Centra verticalmente */
+    align-items: center;
+    /* Centra horizontalmente */
+    min-height: 100vh;
+    /* Permite que el contenido crezca si es necesario */
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--secondary);
+    box-sizing: border-box;
+    overflow: hidden;
+    /* Opcional: evita scroll si todo cabe */
+}
+
+.containerArtesanias .section-title {
+    font-size: var(--fontsize-xl);
+    font-weight: bold;
+    margin-bottom: 5rem;
+    color: var(--primary);
+}
+
+.containerArtesanias .card-container {
+    background-color: var(--light-soft);
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    align-items: stretch;
+    max-width: 1000px;
+    width: 100%;
+    /* Asegura que no se pase de 100% del padre */
+    scrollbar-width: none;
+    box-sizing: border-box;
+}
+
+.containerArtesanias .card {
+    display: flex;
+    flex-direction: column;
+    max-width: 240px;
+    flex-shrink: 0;
+    border-radius: 12px 12px 5px 5px;
+    background-color: white;
+}
+
+.containerArtesanias .card-img {
+    aspect-ratio: 16 / 9;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px 12px 0 0;
+    flex-shrink: 0;
+    /* Fija el tamaño */
+}
+
+.containerArtesanias .card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    flex-grow: 1;
+}
+
+.containerArtesanias .spacer {
+    flex-grow: 1;
+    /* Empuja el botón hacia el fondo */
+}
+
+.containerArtesanias .button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+
+.containerArtesanias .card-title {
+    font-size: 1rem;
+    font-weight: bold;
+    width: 100%;
+    font-size: var(--fontsize-xs);
+    color: #727978;
+
+    display: -webkit-box;
+    display: box;
+    /* fallback if needed */
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    /* Multiline truncation */
+    -webkit-line-clamp: 1;
+    /* Chrome, Safari */
+    -webkit-box-orient: vertical;
+
+    line-clamp: 1;
+    /* Standard syntax (e.g. Firefox) */
+    box-orient: vertical;
+}
+
+.containerArtesanias .card-description {
+    width: 100%;
+    font-size: var(--fontsize-xs);
+    color: #727978;
+
+    display: -webkit-box;
+    display: box;
+    /* fallback if needed */
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    /* Multiline truncation */
+    -webkit-line-clamp: 3;
+    /* Chrome, Safari */
+    -webkit-box-orient: vertical;
+
+    line-clamp: 3;
+    /* Standard syntax (e.g. Firefox) */
+    box-orient: vertical;
+}
+
+
+
+
+.containerArtesanias .button-wrapper .button {
+    background-color: var(--secondary);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    font-weight: bold;
+    font-size: var(--fontsize-sm);
+    box-shadow: none;
+}
+
+.containerArtesanias .button-wrapper .button:hover {
+    background-color: var(--primary-soft);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    font-weight: bold;
+    font-size: var(--fontsize-sm);
+    box-shadow: none;
+}
+
+/* ============================================================================================= */
+/* MODAL */
+.modalArtesania {
+    display: none;
+    position: fixed;
+    z-index: 1100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(36, 49, 49, .9);
+    overflow-y: auto;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+.modalArtesania.active {
+    display: flex;
+}
+
+.modalArtesania .modal-content {
+    position: relative;
+    background-color: var(--secondary);
+    margin: auto;
+    padding: 20px 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 1000px;
+    /* menos ancho máximo para móviles */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+    color: var(--primary);
+}
+
+.modalArtesania .close-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.modalArtesania .scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 12px;
+    padding: 10px 0;
+    background-color: var(--light-soft) !important;
+
+}
+
+.modalArtesania .scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+.modalArtesania .card {
+    min-width: 240px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+}
+
+
+.modalArtesania .modalArtesania-image {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.modalArtesania #modalArtesania-images a {
+    display: block;
+    width: 300px;
+    height: 200px;
+    flex-shrink: 0;
+}
+
+
+.modalArtesania .title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #0d141c;
+    margin-top: 20px;
+}
+
+.modalArtesania .description {
+    font-size: var(--fontsize-sm);
+    color: #0d141c;
+    margin-top: 10px;
+    line-height: 1.8rem;
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+
+}
