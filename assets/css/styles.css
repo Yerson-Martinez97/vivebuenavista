@@ -170,6 +170,7 @@ a, a:hover {
     font-size: 1.2rem;
     font-weight: bold;
 }
+
 /*  */
 .reservation-container {
     display: flex;
@@ -282,7 +283,7 @@ a, a:hover {
     height: 50px;
     padding: 15px;
     background: var(--primary);
-    color: var(--primary) !important;
+    color: var(--light);
     border: 2px solid var(--light);
     border-radius: 50px;
     font-size: 18px;
