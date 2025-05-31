@@ -3,36 +3,40 @@ document.addEventListener("DOMContentLoaded", () => {
   fetch("json/restaurantes.json")
     .then((res) => res.json())
     .then((data) => {
-      document.querySelectorAll(".card [data-idRestaurante]").forEach((card) => {
-        card.addEventListener("click", function () {
-          const id = this.getAttribute("data-idRestaurante");
-          const restaurante = data[id];
+      document
+        .querySelectorAll(".card [data-idRestaurante]")
+        .forEach((card) => {
+          card.addEventListener("click", function () {
+            const id = this.getAttribute("data-idRestaurante");
+            const restaurante = data[id];
 
-          if (restaurante) {
-            openModalRestaurante(
-              restaurante.title || "",
-              restaurante.services || "",
-              restaurante.atractions || "",
-              restaurante.reservations || "",
-              restaurante.images || [],
-              restaurante.location || "",
-              restaurante.socialnetworks || "",
-              restaurante.website || ""
-            );
-          } else {
-            openModalRestaurante(
-              "Información no disponible",
-              "",
-              "",
-              "",
-              [],
-              "",
-              "",
-              ""
-            );
-          }
+            if (restaurante) {
+              openModalRestaurante(
+                restaurante.title || "",
+                restaurante.stars || "",
+                restaurante.description || "",
+                restaurante.reservations || "",
+                restaurante.images || [],
+                restaurante.opinions || "",
+                restaurante.businesshours || "",
+                restaurante.location || "",
+                restaurante.socialnetworks || "",
+                restaurante.recommendations || ""
+              );
+            } else {
+              openModalRestaurante(
+                "Información no disponible",
+                "",
+                "",
+                "",
+                [],
+                "",
+                "",
+                ""
+              );
+            }
+          });
         });
-      });
 
       document
         .getElementById("modalRestaurante-close")
@@ -55,45 +59,153 @@ let restauranteLightbox = null;
 
 function openModalRestaurante(
   title,
-  services,
-  atractions,
+  stars,
+  description,
   reservations,
   images,
+  opinions,
+  businesshours,
   location,
   socialnetworks,
-  website
+  recommendations
 ) {
   document.body.style.overflow = "hidden";
 
   const modalRestaurante = document.getElementById("modalRestaurante");
 
   // Title
-  const modalRestauranteTitle = document.getElementById("modalRestaurante-title");
+  const modalRestauranteTitle = document.getElementById(
+    "modalRestaurante-title"
+  );
 
   modalRestauranteTitle.innerText = title;
-  // Services
-  const modalRestauranteServices = document.getElementById(
-    "modalRestaurante-services"
+  // Stars
+  const modalRestauranteStars = document.getElementById(
+    "modalRestaurante-stars"
   );
-  if (Array.isArray(services)) {
-    modalRestauranteServices.innerHTML = `
-    <h2 class="modalRestaurante__title">Servicios</h2>
-    ${services.map((service) => `<p>- ${service}</p>`).join("")}
-  `;
-  } else {
-    modalRestauranteServices.style.display = "none";
+  modalRestauranteStars.innerHTML = ""; // Limpiar estrellas anteriores
+
+  // Crear un contenedor para las estrellas y el valor
+  const starContainer = document.createElement("div");
+  starContainer.classList.add("star-container");
+
+  // Convertir el puntaje en un número flotante
+  const fullStars = Math.floor(stars); // Número de estrellas completas
+  const partialStar = stars - fullStars; // Parte de la estrella (si existe)
+
+  // Crear las estrellas completas
+  for (let i = 0; i < fullStars; i++) {
+    const star = document.createElement("i");
+    star.classList.add("fas", "fa-star"); // Usar Font Awesome para estrella llena
+    starContainer.appendChild(star);
   }
-  // Atractions
-  const modalRestauranteAtractions = document.getElementById(
-    "modalRestaurante-atractions"
+
+  // Crear la estrella parcial, si hay parte decimal
+  if (partialStar > 0) {
+    const star = document.createElement("i");
+    star.classList.add("fas", "fa-star-half-alt"); // Usar Font Awesome para estrella media
+    starContainer.appendChild(star);
+  }
+
+  // Rellenar las estrellas vacías restantes (hasta 5)
+  for (let i = fullStars + (partialStar > 0 ? 1 : 0); i < 5; i++) {
+    const star = document.createElement("i");
+    star.classList.add("far", "fa-star"); // Usar Font Awesome para estrella vacía
+    starContainer.appendChild(star);
+  }
+
+  // Mostrar el valor de las estrellas al lado
+  const starValue = document.createElement("span");
+  starValue.classList.add("star-value");
+  starValue.innerText = `(${stars})`; // Muestra el valor numérico entre paréntesis
+
+  // Añadir las estrellas y el valor al contenedor
+  starContainer.appendChild(starValue);
+
+  // Añadir las estrellas y el valor al modal
+  modalRestauranteStars.appendChild(starContainer);
+
+  // Description
+  const modalRestauranteDescription = document.getElementById(
+    "modalRestaurante-description"
   );
-  if (Array.isArray(atractions)) {
-    modalRestauranteAtractions.innerHTML = `
-    <h2 class="modalRestaurante__title">Atracciones</h2>
-    ${atractions.map((atraction) => `<p>- ${atraction}</p>`).join("")}
-  `;
+  modalRestauranteDescription.innerHTML = description;
+  // Images
+  const modalRestauranteImages = document.getElementById(
+    "modalRestaurante-images"
+  );
+  modalRestauranteImages.innerHTML = "";
+
+  // Destruir instancia anterior de PhotoSwipe
+  if (restauranteLightbox) {
+    restauranteLightbox.destroy();
+  }
+
+  if (Array.isArray(images) && images.length > 0) {
+    images.forEach((src) => {
+      const a = document.createElement("a");
+      a.href = src;
+      a.setAttribute("data-pswp-width", "1200"); // Ajusta según tamaño real
+      a.setAttribute("data-pswp-height", "800"); // Ajusta según tamaño real
+      a.style.cursor = "pointer";
+      const img = document.createElement("img");
+      img.src = src;
+      img.alt = title;
+      img.classList.add("modalRestaurante-image");
+      a.appendChild(img);
+      modalRestauranteImages.appendChild(a);
+    });
+    // Crear nueva instancia de PhotoSwipeLightbox
+    restauranteLightbox = new PhotoSwipeLightbox({
+      gallery: "#modalRestaurante-images",
+      children: "a",
+      pswpModule: () => import("../libraries/photoswiper/photoswipe.esm.js"),
+      showHideAnimationType: "fade",
+      loop: false,
+      showHideAnimationType: "zoom",
+      bgOpacity: 0.8,
+      clickToCloseNonZoomable: true,
+      tapAction: "toggle-controls",
+      preload: [1, 1],
+    });
+    restauranteLightbox.init();
+  }
+  // Opinions
+  const modalRestauranteOpinions = document.getElementById(
+    "modalRestaurante-opinions"
+  );
+  if (opinions) {
+    modalRestauranteOpinions.innerHTML = opinions;
   } else {
-    modalRestauranteAtractions.style.display = "none";
+    modalRestauranteOpinions.style.display = "none";
+  }
+  // =============================================================================================
+  // BUSINESS HOURS
+  const modalRestauranteBusinessHours = document.getElementById(
+    "modalRestaurante-businesshours"
+  );
+  modalRestauranteBusinessHours.innerHTML = ""; // Limpiar horario anterior
+
+  if (businesshours && Array.isArray(businesshours)) {
+    const businessHoursTitle = document.createElement("h3");
+    businessHoursTitle.innerText = "Horario de Atención:";
+    modalRestauranteBusinessHours.appendChild(businessHoursTitle);
+
+    const list = document.createElement("ul");
+    if (Array.isArray(businesshours[1])) {
+      businesshours[1].forEach((hour) => {
+        const li = document.createElement("li");
+        const [day, time] = Object.entries(hour)[0];
+        li.innerHTML = `<strong>${day}:</strong> ${time}`;
+        list.appendChild(li);
+      });
+    } else {
+      modalRestauranteBusinessHours.style.display = "none";
+    }
+
+    modalRestauranteBusinessHours.appendChild(list);
+  } else {
+    modalRestauranteBusinessHours.style.display = "none";
   }
   // Reservations
   const modalRestauranteReservations = document.getElementById(
@@ -144,7 +256,8 @@ function openModalRestaurante(
 
       // Si no hay números fijos ni móviles, mostramos un mensaje
       if (!hasPhones) {
-        reservationContainer.innerHTML = "<p>No hay números disponibles</p>";
+        // reservationContainer.innerHTML = "<p>No hay números disponibles</p>";
+        reservationContainer.style.display = "none";
       }
 
       // Añadir el contenedor al modal
@@ -152,51 +265,31 @@ function openModalRestaurante(
     });
   } else {
     // Si no existen reservas, mostrar un mensaje
-    modalRestauranteReservations.innerHTML = "<p>No hay números disponibles.</p>";
+    // modalRestauranteReservations.innerHTML =
+    //   "<p>No hay números disponibles.</p>";
+    modalRestauranteReservations.style.display = "none";
   }
-  // Images
-  const modalRestauranteImages = document.getElementById("modalRestaurante-images");
-  modalRestauranteImages.innerHTML = "";
-
-  // Destruir instancia anterior de PhotoSwipe
-  if (restauranteLightbox) {
-    restauranteLightbox.destroy();
-  }
-
-  if (Array.isArray(images) && images.length > 0) {
-    images.forEach((src) => {
-      const a = document.createElement("a");
-      a.href = src;
-      a.setAttribute("data-pswp-width", "1200"); // Ajusta según tamaño real
-      a.setAttribute("data-pswp-height", "800"); // Ajusta según tamaño real
-      a.style.cursor = "pointer";
-      const img = document.createElement("img");
-      img.src = src;
-      img.alt = title;
-      img.classList.add("modalRestaurante-image");
-      a.appendChild(img);
-      modalRestauranteImages.appendChild(a);
-    });
-    // Crear nueva instancia de PhotoSwipeLightbox
-    restauranteLightbox = new PhotoSwipeLightbox({
-      gallery: "#modalRestaurante-images",
-      children: "a",
-      pswpModule: () => import("../libraries/photoswiper/photoswipe.esm.js"),
-      showHideAnimationType: "fade",
-      loop: false,
-      showHideAnimationType: "zoom",
-      bgOpacity: 0.8,
-      clickToCloseNonZoomable: true,
-      tapAction: "toggle-controls",
-      preload: [1, 1],
-    });
-    restauranteLightbox.init();
+  // Recommendation
+  const modalHoteleriaRecommendation = document.getElementById(
+    "modalHoteleria-recommendations"
+  );
+  if (Array.isArray(recommendations)) {
+    modalHoteleriaRecommendation.innerHTML = `
+    <h2 class="modalHoteleria__title">Recomendaciones</h2>
+    ${recommendations
+      .map((recommendation) => `<p>- ${recommendation}</p>`)
+      .join("")}
+  `;
+  } else {
+    modalHoteleriaRecommendation.style.display = "none";
   }
   // LOCATION
   const modalRestauranteAddress = document.getElementById(
     "restaurante-location__address"
   );
-  const modalRestauranteBtnMap = document.getElementById("modalRestaurante-btnMap");
+  const modalRestauranteBtnMap = document.getElementById(
+    "modalRestaurante-btnMap"
+  );
 
   if (location && Array.isArray(location)) {
     // Buscar la dirección y el URL del mapa dentro del array location
@@ -269,15 +362,6 @@ function openModalRestaurante(
   } else {
     modalRestauranteSociaNetworks.style.display = "none";
   }
-  // =============================================================================================
-  // WEBSITE
-  const modalRestauranteWebsite = document.getElementById(
-    "modalRestaurante-website"
-  );
-  modalRestauranteWebsite.innerHTML =
-    website != "" ? `<i class="fa-solid fa-link fa-lg"></i> ` : "";
-  modalRestauranteWebsite.innerHTML += website != "" ? `Sitio Web` : "";
-  modalRestauranteWebsite.href = website;
   // --------
   modalRestaurante.style.display = "flex";
 }

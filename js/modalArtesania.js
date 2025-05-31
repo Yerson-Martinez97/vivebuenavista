@@ -82,7 +82,7 @@ function openModalArtesania(title, description, images) {
       children: "a",
       pswpModule: () => import("../libraries/photoswiper/photoswipe.esm.js"),
       showHideAnimationType: "fade",
-      loop: true,
+      loop: false,
       showHideAnimationType: "zoom",
       bgOpacity: 0.8,
       clickToCloseNonZoomable: true,

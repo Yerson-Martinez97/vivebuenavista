@@ -228,16 +228,44 @@
 }
 
 /* ============================================================================================= */
-/* DESCRIPTION */
-.modalRestaurante .services {
-    font-size: var(--fontsize-sm);
-    color: var(--primary-dark);
-    margin-top: 10px;
-    line-height: 1.8rem;
-    text-align: justify;
-    text-justify: inter-word;
-    hyphens: auto;
+/* STARS */
+#modalRestaurante-stars {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    margin-bottom: 15px;
 }
+
+#modalRestaurante-stars i {
+    margin-right: 5px;
+    color: #f1c40f;
+}
+
+.star-full {
+    width: 20px;
+    height: 20px;
+    background: url('full-star.png') no-repeat center center;
+    background-size: contain;
+}
+
+.star-half {
+    width: 20px;
+    height: 20px;
+    background: url('half-star.png') no-repeat center center;
+    background-size: contain;
+}
+
+.star-empty {
+    width: 20px;
+    height: 20px;
+    background: url('empty-star.png') no-repeat center center;
+    background-size: contain;
+}
+
+.star-value {
+    color: var(--primary-dark);
+}
+
 
 /* ============================================================================================= */
 /* RESERVATIONS */
@@ -245,6 +273,10 @@
     text-align: center;
     font-size: var(--fontsize-md);
     font-weight: bold;
+}
+
+.reservations .reservation-container .fixed-container, .reservations .reservation-container .mobile-container {
+    box-shadow: 0 2px 5px rgba(36, 49, 49, 0.1);
 }
 
 /* ============================================================================================= */
@@ -256,6 +288,8 @@
     padding: 20px;
     margin-bottom: 50px;
     background-color: var(--light-soft);
+    box-shadow: 0 2px 5px rgba(36, 49, 49, 0.1);
+    box-shadow: 0 2px 5px rgba(36, 49, 49, 0.1);
 }
 
 #restaurante-location__title {
@@ -285,6 +319,52 @@
         font-size: var(--fontsize-standard);
     }
 
+}
+
+/* ============================================================================================= */
+/* BUSINESS HOURS  */
+#modalRestaurante-businesshours {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    margin: 20px 0;
+    background-color: var(--light-soft);
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(36, 49, 49, 0.1);
+}
+
+#modalRestaurante-businesshours h3 {
+    font-size: var(--fontsize-medium);
+    color: var(--primary);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+#modalRestaurante-businesshours ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#modalRestaurante-businesshours li {
+    font-size: var(--fontsize-medium);
+    color: var(--primary);
+    padding: 8px 0;
+    border-bottom: 1px solid var(--primary-dark);
+    transition: background-color 0.3s ease;
+}
+
+#modalRestaurante-businesshours li:last-child {
+    border-bottom: none;
+}
+
+#modalRestaurante-businesshours li:hover {
+    background-color: var(--secondary-dark);
+}
+
+#modalRestaurante-businesshours li strong {
+    color: #333;
+    font-weight: 600;
 }
 
 /* ============================================================================================= */
