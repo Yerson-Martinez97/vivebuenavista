@@ -15,11 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
               artesania.images || []
             );
           } else {
-            openModalArtesania(
-              "Información no disponible",
-              "",
-              []
-            );
+            openModalArtesania("Información no disponible", "", []);
           }
         });
       });
@@ -72,7 +68,7 @@ function openModalArtesania(title, description, images) {
       const img = document.createElement("img");
       img.src = src;
       img.alt = title;
-      img.classList.add("modalArtesania-image");
+      img.classList.add("card__image");
       a.appendChild(img);
       modalArtesaniaImages.appendChild(a);
     });

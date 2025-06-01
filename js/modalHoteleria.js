@@ -77,7 +77,7 @@ function openModalHoteleria(
   );
   if (Array.isArray(services)) {
     modalHoteleriaServices.innerHTML = `
-    <h2 class="modalHoteleria__title">Servicios</h2>
+    <h2 class="modal__subtitle">Servicios</h2>
     ${services.map((service) => `<p>- ${service}</p>`).join("")}
   `;
   } else {
@@ -89,7 +89,7 @@ function openModalHoteleria(
   );
   if (Array.isArray(atractions)) {
     modalHoteleriaAtractions.innerHTML = `
-    <h2 class="modalHoteleria__title">Atracciones</h2>
+    <h2 class="modal__subtitle">Atracciones</h2>
     ${atractions.map((atraction) => `<p>- ${atraction}</p>`).join("")}
   `;
   } else {
@@ -173,7 +173,7 @@ function openModalHoteleria(
       const img = document.createElement("img");
       img.src = src;
       img.alt = title;
-      img.classList.add("modalHoteleria-image");
+      img.classList.add("card__image");
       a.appendChild(img);
       modalHoteleriaImages.appendChild(a);
     });
@@ -194,7 +194,7 @@ function openModalHoteleria(
   }
   // LOCATION
   const modalHoteleriaAddress = document.getElementById(
-    "restaurante-location__address"
+    "hoteleria-location__address"
   );
   const modalHoteleriaBtnMap = document.getElementById("modalHoteleria-btnMap");
 

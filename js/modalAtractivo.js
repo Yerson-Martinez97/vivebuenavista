@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
               if (Array.isArray(mural.images)) {
                 description += `<div class="scroll-container">`;
                 mural.images.forEach((imgUrl) => {
-                  description += `<img src="${imgUrl}" alt="" class="modalAtractivo-image">`;
+                  description += `<img src="${imgUrl}" alt="" class="image">`;
                 });
                 description += `</div>`;
               }
@@ -93,7 +93,7 @@ function openModalAtractivo(title, description, images, location) {
       const img = document.createElement("img");
       img.src = src;
       img.alt = title;
-      img.classList.add("modalAtractivo-image");
+      img.classList.add("card__image");
       a.appendChild(img);
       modalAtractivoImages.appendChild(a);
     });
@@ -113,19 +113,19 @@ function openModalAtractivo(title, description, images, location) {
     atractivoLightbox.init();
   }
   // LOCATION
-  const modalHoteleriaAddress = document.getElementById(
+  const modalAtractivoAddress = document.getElementById(
     "restaurante-location__address"
   );
-  const modalHoteleriaBtnMap = document.getElementById("modalHoteleria-btnMap");
+  const modalAtractivoBtnMap = document.getElementById("modalAtractivo-btnMap");
 
   // Verifica si location es una cadena de texto (como en tu JSON)
   if (typeof location === "string" && location.trim() !== "") {
-    modalHoteleriaAddress.textContent = "Ubicación disponible en el mapa";
-    modalHoteleriaBtnMap.href = location;
-    modalHoteleriaBtnMap.style.display = "inline-block";
+    modalAtractivoAddress.textContent = "Ubicación disponible en el mapa";
+    modalAtractivoBtnMap.href = location;
+    modalAtractivoBtnMap.style.display = "inline-block";
   } else {
-    modalHoteleriaAddress.textContent = "Dirección no disponible";
-    modalHoteleriaBtnMap.style.display = "none";
+    modalAtractivoAddress.textContent = "Dirección no disponible";
+    modalAtractivoBtnMap.style.display = "none";
   }
   // ------
   modalAtractivo.style.display = "flex";

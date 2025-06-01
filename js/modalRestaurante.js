@@ -151,7 +151,7 @@ function openModalRestaurante(
       const img = document.createElement("img");
       img.src = src;
       img.alt = title;
-      img.classList.add("modalRestaurante-image");
+      img.classList.add("card__image");
       a.appendChild(img);
       modalRestauranteImages.appendChild(a);
     });

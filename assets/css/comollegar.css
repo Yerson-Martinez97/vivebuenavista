@@ -4,8 +4,9 @@
     flex-direction: column;
     justify-content: center;
     overflow-x: hidden;
-    padding-bottom: 100px;
-    /* height: 100vh; */
+    color: var(--primary-dark);
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 .containerComoLlegar .title {
@@ -13,9 +14,8 @@
     font-size: var(--fontsize-xl);
     font-weight: bold;
     padding: 1.25rem 1rem 0.75rem;
-    color: #0d141c;
     letter-spacing: -0.015em;
-    
+
 }
 
 .containerComoLlegar .subtitle {
@@ -30,8 +30,10 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    padding: 0.5rem 1rem;
+    margin: 10px 0;
+    padding: 1rem 1.5rem;
     background-color: var(--light-soft);
+    border-radius: 100px;
     min-height: 72px;
     flex-wrap: wrap;
 }
@@ -58,28 +60,37 @@
 .containerComoLlegar .info-text p:first-child {
     font-weight: 500;
     font-size: var(--fontsize-sm);
-    color: #0d141c;
+    color: var(--primary-dark);
     margin: 0;
 }
 
 .containerComoLlegar .info-text p:last-child {
     font-size: var(--fontsize-md);
-    color: #49739c;
+    color: var(--primary);
     margin: 0.25rem 0 0;
+}
+
+@media (max-width: 900px) {
+    .containerComoLlegar {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .containerComoLlegar .info-block {
+        margin: 15px;
+        padding: 1rem 1.5rem;
+    }
 }
 
 /* Responsive Styles */
 @media (max-width: 600px) {
-    .containerComoLlegar .header h2 {
-        font-size: 1rem;
-        padding: 0 1.5rem;
-    }
-
     .containerComoLlegar .title {
-        font-size: 1.1rem;
+        font-size: var(--fontsize-lg);
+        padding: 0 15px;
     }
 
     .containerComoLlegar .subtitle {
+        font-size: var(--fontsize-sm) !important;
         font-size: 0.95rem;
     }
 
@@ -89,17 +100,10 @@
     }
 
     .containerComoLlegar .info-text p:first-child {
-        font-size: 0.95rem;
+        font-size: 0.8rem;
     }
 
     .containerComoLlegar .info-text p:last-child {
-        font-size: 0.8rem;
-    }
-}
-
-@media (min-width: 900px) {
-    .containerComoLlegar {
-        max-width: 700px;
-        margin: 0 auto;
+        font-size: var(--fontsize-sm);
     }
 }

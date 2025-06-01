@@ -43,14 +43,9 @@
     <link rel="stylesheet" href="assets/css/ferias.css">
     <link rel="stylesheet" href="assets/css/footer.css">
 
+    <!--  -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-60NM5HJRQ1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-60NM5HJRQ1');
-    </script>
+    <script src="js/analytics.js"> </script>
 </head>
 
 </head>
@@ -100,11 +95,6 @@
                     <h2 class="subtitle">Descubre BuenaVista, un lugar lleno de historia, cultura y naturaleza en
                         Santa Cruz. Vive su encanto auténtico y su calidez única. ¡Te esperamos!.</h2>
                 </div>
-                <!-- <a class="btn-general" data-aos="fade-up">
-                    <span>
-                        <i class="fa-solid fa-shoe-prints fa-rotate-90 fa-lg"></i>
-                        ¿Cómo Llegar?</span>
-                </a> -->
                 <div class="button-wrapper">
                     <a class="button scroll" href="#linkComoLlegar">
                         <i class="fa-solid fa-shoe-prints fa-rotate-90 fa-lg"></i>
@@ -114,30 +104,6 @@
             </div>
         </section>
     </header>
-    <script>
-        window.addEventListener("load", function () {
-            const navbar = document.getElementById("navFixed");
-            const linkHome = document.getElementById("linkHome");
-
-            navbar.classList.add("light");
-
-            window.addEventListener("scroll", function () {
-                // Obtener la posición de la sección linkHome
-                const linkHomeTop = linkHome.offsetTop;
-                const linkHomeHeight = linkHome.offsetHeight - 100;
-
-                // Si estamos dentro de la sección linkHome
-                if (window.scrollY >= linkHomeTop && window.scrollY <= (linkHomeTop + linkHomeHeight)) {
-                    navbar.classList.add("light");
-                    navbar.classList.remove("solid");
-                } else {
-                    navbar.classList.add("solid");
-                    navbar.classList.remove("light");
-                }
-            });
-        });
-
-    </script>
     <!-- Fin Contenedor Header -->
 
     <!-- Contenedor Main -->
@@ -151,7 +117,6 @@
 
                 <div class="info-block">
                     <div class="icon-box">
-                        <!-- Bus Icon -->
                         <i class="fa-solid fa-bus fa-lg"></i>
                     </div>
                     <div class="info-text">
@@ -161,7 +126,6 @@
                 </div>
                 <div class="info-block">
                     <div class="icon-box">
-                        <!-- Clock Icon -->
                         <i class="fa-solid fa-clock fa-lg"></i>
                     </div>
                     <div class="info-text">
@@ -172,7 +136,6 @@
 
                 <div class="info-block">
                     <div class="icon-box">
-                        <!-- Money Icon -->
                         <i class="fa-solid fa-coins"></i>
                     </div>
                     <div class="info-text">
@@ -190,6 +153,7 @@
             </div>
         </section>
         <!-- Fin Sección Como Llegar -->
+
         <!-- Sección Atractivos -->
         <section id="linkAtractivos" class="containerAtractivos" data-aos="fade-up">
             <h2 class="section-title">Atractivos</h2>
@@ -324,12 +288,12 @@
             <div class="modal-content">
                 <button id="modalAtractivo-close" class="close-btn"><i class="fa-solid fa-xmark"></i></button>
 
-                <h1 id="modalAtractivo-title" class="title">Título</h1>
-                <p id="modalAtractivo-description" class="description">
+                <h1 id="modalAtractivo-title" class="modal__title">Título</h1>
+                <p id="modalAtractivo-description" class="modal__description">
                     Párrafo
                 </p>
                 <div class="button-wrapper">
-                    <a id="modalHoteleria-btnMap" class="button" target="_blank" rel="noopener noreferrer">
+                    <a id="modalAtractivo-btnMap" class="button" target="_blank" rel="noopener noreferrer">
                         <i class="fa-solid fa-location-dot fa-xl"></i>
                         Ver Ruta
                     </a>
@@ -338,6 +302,7 @@
             </div>
         </div>
         <!-- Fin Sección Atractivos -->
+
         <!-- Sección Artesanias -->
         <section id="linkArtesanias" class="containerArtesanias" data-aos="fade-up">
             <h2 class="section-title">Artesanías</h2>
@@ -375,8 +340,8 @@
             <div class="modal-content">
                 <button id="modalArtesania-close" class="close-btn"><i class="fa-solid fa-xmark"></i></button>
 
-                <h1 id="modalArtesania-title" class="title">Título</h1>
-                <p id="modalArtesania-description" class="description">
+                <h1 id="modalArtesania-title" class="modal__title">Título</h1>
+                <p id="modalArtesania-description" class="modal__description">
                     Párrafo
                 </p>
                 <div id="modalArtesania-images" class="scroll-container"> </div>
@@ -515,16 +480,16 @@
             <div class="modal-content">
                 <button id="modalHoteleria-close" class="close-btn"><i class="fa-solid fa-xmark"></i></button>
 
-                <h1 id="modalHoteleria-title" class="title">Título</h1>
-                <div id="modalHoteleria-services" class="services">
+                <h1 id="modalHoteleria-title" class="modal__title">Título</h1>
+                <div id="modalHoteleria-services" class="modal__services">
                     Servicios
                 </div>
                 <div id="modalHoteleria-images" class="scroll-container"> </div>
-                <div id="modalHoteleria-reservations" class="reservations">Reservas </div>
-                <div id="modalHoteleria-atractions" class="atractions">Atracciones</div>
-                <div class="modalHoteleria-location">
-                    <div id="restaurante-location__title">Dirección</div>
-                    <div id="restaurante-location__address"></div>
+                <div id="modalHoteleria-reservations" class="modal__reservations">Reservas </div>
+                <div id="modalHoteleria-atractions" class="modal__atractions">Atracciones</div>
+                <div class="location">
+                    <div class="modal__location__title">Dirección</div>
+                    <div id="hoteleria-location__address" class="modal__location__address"></div>
                     <div class="button-wrapper">
                         <a id="modalHoteleria-btnMap" class="button" target="_blank" rel="noopener noreferrer">
                             <i class="fa-solid fa-location-dot fa-xl"></i>
@@ -532,8 +497,9 @@
                         </a>
                     </div>
                 </div>
-                <div id="modalHoteleria-socialnetworks"></div>
-                <a id="modalHoteleria-website" href="" target="_blank" rel="noopener noreferrer">Sitio Web</a>
+                <div id="modalHoteleria-socialnetworks" class="modal__socialnetworks"></div>
+                <a id="modalHoteleria-website" class="modal__website" href="" target="_blank"
+                    rel="noopener noreferrer">Sitio Web</a>
             </div>
         </div>
         <!-- Fin Sección Hoteleria -->
@@ -609,69 +575,26 @@
                 </div>
             </div>
         </section>
-        <script>
-            function renderRating(estrellasContainer, ratingNumberElement, puntuacion) {
-                const llenas = Math.floor(puntuacion);
-                const decimal = puntuacion - llenas;
-                const media = decimal >= 0.25 && decimal < 0.75 ? 1 : 0;
-                const vacias = 5 - llenas - media;
-
-                estrellasContainer.innerHTML = '';
-
-                // Estrellas llenas
-                for (let i = 0; i < llenas; i++) {
-                    const estrella = document.createElement('i');
-                    estrella.classList.add('fas', 'fa-star', 'filled');
-                    estrellasContainer.appendChild(estrella);
-                }
-
-                // Media estrella
-                if (media === 1) {
-                    const mediaEstrella = document.createElement('i');
-                    mediaEstrella.classList.add('fas', 'fa-star-half-stroke');
-                    estrellasContainer.appendChild(mediaEstrella);
-                }
-
-                // Estrellas vacías
-                for (let i = 0; i < vacias; i++) {
-                    const estrella = document.createElement('i');
-                    estrella.classList.add('far', 'fa-star');
-                    estrellasContainer.appendChild(estrella);
-                }
-
-                ratingNumberElement.textContent = puntuacion.toFixed(1);
-            }
-
-            // Aplica la función a todas las tarjetas con data-star
-            document.querySelectorAll('.card').forEach(card => {
-                const rating = parseFloat(card.dataset.star);
-                const estrellasContainer = card.querySelector('.estrellas');
-                const ratingNumberElement = card.querySelector('.rating-number');
-
-                if (!isNaN(rating) && estrellasContainer && ratingNumberElement) {
-                    renderRating(estrellasContainer, ratingNumberElement, rating);
-                }
-            });
-        </script>
+        <script src="js/scores.js"></script>
 
         <div class="modalRestaurante" id="modalRestaurante">
             <div class="modal-content">
                 <button id="modalRestaurante-close" class="close-btn"><i class="fa-solid fa-xmark"></i></button>
 
-                <h1 id="modalRestaurante-title" class="title">Título</h1>
+                <h1 id="modalRestaurante-title" class="modal__title">Título</h1>
                 <div id="modalRestaurante-stars" class="stars">
                     Puntuación
                 </div>
-                <div id="modalRestaurante-description" class="description">
+                <div id="modalRestaurante-description" class="modal__description">
                     Descripción
                 </div>
                 <div id="modalRestaurante-images" class="scroll-container"> </div>
-                <div id="modalRestaurante-opinions" class="opinions">Opiniones </div>
-                <div id="modalRestaurante-businesshours">Horarios:</div>
-                <div id="modalRestaurante-reservations" class="reservations">Reservas </div>
-                <div class="modalRestaurante-location">
-                    <div id="restaurante-location__title">Dirección</div>
-                    <div id="restaurante-location__address"></div>
+                <div id="modalRestaurante-opinions" class="modal__opinions">Opiniones </div>
+                <div id="modalRestaurante-businesshours" class="modal__businesshours">Horarios:</div>
+                <div id="modalRestaurante-reservations" class="modal__reservations">Reservas </div>
+                <div class="location">
+                    <div class="modal__location__title">Dirección</div>
+                    <div id="restaurante-location__address" class="modal__location__address"></div>
                     <div class="button-wrapper">
                         <a id="modalRestaurante-btnMap" class="button" target="_blank" rel="noopener noreferrer">
                             <i class="fa-solid fa-location-dot fa-xl"></i>
@@ -681,16 +604,16 @@
                 </div>
                 <div id="modalHoteleria-recommendations" class="recommendations">Reservas </div>
 
-                <div id="modalRestaurante-socialnetworks"></div>
+                <div id="modalRestaurante-socialnetworks" class="modal__socialnetworks"></div>
             </div>
         </div>
         <!-- Fin Sección Restaurante -->
+
         <!-- Sección Ferias -->
         <section id="linkFerias" class="containerFerias" data-aos="fade-up">
             <h2 class="section-title">Ferias y Festivos</h2>
             <div class="card-container">
                 <div class="card">
-                    <!-- <div class="card-img" style="background-image: url('assets/images/ferias/');"></div> -->
                     <div class="card-body">
                         <p class="card-title" title="Festival Nacional del Café">Festival Nacional del Café</p>
                         <p class="card-description">El Festival Nacional del Café en Buena Vista es un evento que
@@ -702,7 +625,6 @@
                     </div>
                 </div>
                 <div class="card">
-                    <!-- <div class="card-img" style="background-image: url('assets/images/ferias/');"></div> -->
                     <div class="card-body">
                         <p class="card-title" title="Misa de Campaña">Misa de Campaña</p>
                         <p class="card-description">La misa de campaña es una ceremonia religiosa que se celebra al aire
@@ -714,7 +636,6 @@
                     </div>
                 </div>
                 <div class="card">
-                    <!-- <div class="card-img" style="background-image: url('assets/images/ferias/');"></div> -->
                     <div class="card-body">
                         <p class="card-title" title="Feria De Ganado">Feria De Ganado</p>
                         <p class="card-description">En San Pedro de Buena Vista, se celebra el "Toro Tinku", la mayor
@@ -726,7 +647,6 @@
                     </div>
                 </div>
                 <div class="card">
-                    <!-- <div class="card-img" style="background-image: url('assets/images/ferias/');"></div> -->
                     <div class="card-body">
                         <p class="card-title" title="Café de la Siesta">Romería con Carretas y
                             Grupos Folclóricos</p>
@@ -740,7 +660,6 @@
                     </div>
                 </div>
                 <div class="card">
-                    <!-- <div class="card-img" style="background-image: url('assets/images/ferias/');"></div> -->
                     <div class="card-body">
                         <p class="card-title" title="Café de la Siesta">Café de la Siesta</p>
                         <p class="card-description">El 'Café de la Siesta' es una tradición local que consiste en
@@ -758,11 +677,11 @@
             <div class="modal-content">
                 <button id="modalFeria-close" class="close-btn"><i class="fa-solid fa-xmark"></i></button>
 
-                <h1 id="modalFeria-title" class="title">Título</h1>
-                <p id="modalFeria-description" class="description">
+                <h1 id="modalFeria-title" class="modal__title">Título</h1>
+                <p id="modalFeria-description" class="modal__description">
                     Descripción
                 </p>
-                <p id="modalFeria-event" class="description">
+                <p id="modalFeria-event" class="modal__description">
                     Evento
                 </p>
             </div>
@@ -780,9 +699,7 @@
         </div>
     </footer>
     <!-- Fin Contenedor Footer -->
-    <script>
-        document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
+    <script> document.getElementById("year").textContent = new Date().getFullYear(); </script>
 
     <!-- LIBRARIES -->
     <script src="libraries/jquery/jquery-3.3.1.slim.min.js"></script>

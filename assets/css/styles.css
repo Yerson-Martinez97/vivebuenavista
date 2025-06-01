@@ -12,20 +12,20 @@
     --blue: rgb(27, 86, 253);
     --blue-dark: rgb(1, 24, 216);
     /* FONT SIZES */
-    --fontsize-xs: 0.875rem;
     /* Extra pequeño */
-    --fontsize-sm: 1rem;
+    --fontsize-xs: 0.875rem;
     /* Pequeño, texto base */
-    --fontsize-md: 1.25rem;
+    --fontsize-sm: 1rem;
     /* Medio, subtítulos */
-    --fontsize-lg: 1.5rem;
+    --fontsize-md: 1.25rem;
     /* Grande, títulos */
-    --fontsize-xl: 2rem;
+    --fontsize-lg: 1.5rem;
     /* Muy grande, encabezados */
-    --fontsize-xxl: 2.5rem;
+    --fontsize-xl: 2rem;
     /* Extra grande, hero text */
-    --fontsize-xxxl: 3rem;
+    --fontsize-xxl: 2.5rem;
     /* Ultra grande */
+    --fontsize-xxxl: 3rem;
 }
 
 /* ================================================================================================== */
@@ -67,6 +67,8 @@ a, a:hover {
     color: var(--secondary) !important;
 }
 
+/* ============================================================================================= */
+/* BUTTON GENERAL */
 .button-wrapper {
     display: flex;
     justify-content: center;
@@ -77,7 +79,7 @@ a, a:hover {
     background-color: var(--primary);
     color: var(--secondary);
     font-weight: bold;
-    font-size: var(--fontsize-md);
+    font-size: var(--fontsize-sm);
     padding: 18px 32px;
     min-height: 40px;
     border: none;
@@ -91,65 +93,29 @@ a, a:hover {
     transition: all 0.3s ease-in-out;
     box-shadow: 0 5px 10px var(--primary-dark);
     gap: 8px;
+    margin-bottom: 20px;
 }
 
 .button-wrapper .button:hover {
     background-color: var(--primary-dark);
+    color: var(--secondary);
 }
 
-/* Services */
-.services {
-    /* border: 5px double var(--primary); */
-    background-color: var(--background-soft);
-    padding: 20px 40px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(36, 49, 49, 0.1);
+@media (max-width: 480px) {
+    .button-wrapper .button {
+        font-size: var(--fontsize-sm);
+    }
 }
 
-.opinions {
-    background-color: var(--background-soft);
-    padding: 20px 40px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(36, 49, 49, 0.1);
-}
+@media (min-width: 481px) {}
 
-.recommendations {
-    background-color: var(--background-soft);
-    padding: 20px 40px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(36, 49, 49, 0.1);
+@media (min-width: 768px) {}
 
-}
+@media (min-width: 1025px) {}
 
-.description {
-    background-color: var(--background-soft);
-    padding: 20px 25px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(36, 49, 49, 0.1);
-    text-align: justify;
-    text-align-last: left;
-    word-spacing: normal;
-    line-height: 1.6;
-    letter-spacing: 0.5px;
-}
+@media (min-width: 1281px) {}
 
-/* Atractions */
-.atractions {
-    background-color: var(--background-soft);
-    padding: 20px 40px;
-    margin-bottom: 20px;
-}
-
-/* Reservations */
-.reservations {
-    /* border: 10px double var(--primary); */
-    color: var(--primary);
-    font-size: var(--fontsize-sm);
-    line-height: 1.6;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
+/* ============================================================================================= */
 /* ESTRELLAS */
 .estrellas {
     font-size: 1.2rem;
@@ -176,99 +142,36 @@ a, a:hover {
     font-weight: bold;
 }
 
-/*  */
-.reservation-container {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    /* <-- ESTIRA LOS ELEMENTOS PARA IGUALAR ALTURA */
-    gap: 10px;
-    margin-bottom: 20px;
-    flex-wrap: wrap;
-}
-
-.reservation-container .fixed-container {
-    outline: none;
-    /* border-right: 10px double var(--primary); */
-    flex: 1;
-    /* Toma el 50% del espacio disponible */
-    height: 100%;
-}
-
-.fixed-container,
-.mobile-container {
-    width: 100%;
-    max-width: 500px;
-    border-radius: 2px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--background-soft);
-    /* Para que su contenido no rompa el layout */
-}
-
-.mobile-container {
-    flex: 1;
-    /* Toma el 50% del espacio disponible */
-}
-
-.mobile-container strong, .fixed-container strong {
-    font-size: var(--fontsize-md);
-}
-
-@media (max-width: 768px) {
-    .reservation-container {
-        flex-direction: column;
-        /* Cambiar a columna para pantallas pequeñas */
-        gap: 15px;
-        /* Reducir el espacio entre los bloques */
-    }
-
-    .fixed-container,
-    .mobile-container {
-        max-width: 100%;
-        /* Para que tomen el ancho completo en móviles */
-    }
-
-    /* Ajustar el tamaño de fuente para pantallas pequeñas */
-    #modalHoteleria-reservations {
-        font-size: 1.2rem;
-    }
-
-    #modalHoteleria-reservations a, #modalHoteleria-reservations p {
-        font-size: 1rem;
-    }
-
-    #modalHoteleria-reservations .sn-whatsapp {
-        font-size: 1.8rem;
-        /* Hacer un poco más pequeño el ícono */
-    }
-}
-
-/* MEDIA QUERY PARA PANTALLAS MUY PEQUEÑAS (Móviles más pequeños) */
-@media (max-width: 480px) {
-    #modalHoteleria-reservations {
-        font-size: 1rem;
-        /* Reducir el tamaño de fuente aún más en pantallas pequeñas */
-    }
-
-    #modalHoteleria-reservations a, #modalHoteleria-reservations p {
-        font-size: 0.9rem;
-        /* Ajustar el tamaño de fuente */
-    }
-
-    #modalHoteleria-reservations .sn-whatsapp {
-        font-size: 1.6rem;
-        /* Reducir el ícono en pantallas aún más pequeñas */
-    }
-}
-
 /* ICONS */
-.reservations .sn-whatsapp {
-    margin: none;
+.sn-facebook {
+    color: #3b5998;
+}
+
+.sn-tiktok {
+    color: #000;
+}
+
+.sn-instagram {
+    color: #E4405F;
+}
+
+.sn-whatsapp {
     color: #128c7e;
     font-size: var(--fontsize-lg);
 }
+
+@media (max-width: 800px) {
+    #modalHoteleria-reservations .sn-whatsapp {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #modalHoteleria-reservations .sn-whatsapp {
+        font-size: var(--fontsize-md);
+    }
+}
+
 
 /* ============================================================================================= */
 /* UP BUTTON */
@@ -323,10 +226,451 @@ a, a:hover {
     }
 }
 
-.boxComoLlegar {
-    padding: 50px 25px !important;
+/* ============================================================================================= */
+
+.containerComoLlegar {
+    padding: 3rem 0
 }
 
-.boxAtractivos, .boxArtesanias, .boxHoteleria, .boxFerias, .boxRestaurantes {
-    padding: 50px 0px !important;
+.containerAtractivos, .containerArtesanias, .containerHoteleria, .containerRestaurantes, .containerFerias {
+    padding: 3rem 0px !important;
+}
+
+/* ============================================================================================= */
+/* CARDS */
+.section-title {
+    font-size: var(--fontsize-xl);
+    font-weight: bold;
+    margin-bottom: 5rem;
+    color: var(--secondary);
+}
+
+.card-container {
+    background-color: var(--light-soft);
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    align-items: stretch;
+    max-width: 1000px;
+    width: 100%;
+    scrollbar-width: none;
+    box-sizing: border-box;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width: 240px;
+    flex-shrink: 0;
+    border-radius: 12px 12px 5px 5px;
+    background-color: white;
+    box-shadow: 0px 2px 5px var(--primary-soft);
+}
+
+.card-img {
+    aspect-ratio: 16 / 9;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px 12px 0 0;
+    flex-shrink: 0;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    flex-grow: 1;
+}
+
+.spacer {
+    flex-grow: 1;
+    /* Empuja el botón hacia el fondo */
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+
+.card-title {
+    font-size: 1rem;
+    font-weight: bold;
+    width: 100%;
+    font-size: var(--fontsize-xs);
+    color: var(--primary);
+    display: -webkit-box;
+    display: box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    line-clamp: 1;
+    box-orient: vertical;
+}
+
+.card-description {
+    width: 100%;
+    font-size: var(--fontsize-xs);
+    color: var(--primary-dark);
+    display: -webkit-box;
+    display: box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-clamp: 3;
+    box-orient: vertical;
+}
+
+
+/* ============================================================================================= */
+/* MODAL */
+.modal-content {
+    position: relative;
+    background-color: var(--secondary);
+    margin: auto;
+    padding: 20px 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 1000px;
+    /* menos ancho máximo para móviles */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+    color: var(--primary);
+}
+
+@media screen and (max-width: 992px) {
+    .modal-content {
+        padding: 20px 0px;
+    }
+
+    .description {
+        padding: 20px 15px !important;
+    }
+}
+
+.modal__title {
+    text-align: center;
+    font-size: var(--fontsize-xl);
+    font-weight: bold;
+    color: var(--primary);
+    padding: 50px 0 10px 0;
+    margin-bottom: 20px;
+}
+
+.modal__subtitle {
+    padding-top: 20px;
+    text-align: center;
+    font-size: var(--fontsize-md);
+    font-weight: bold;
+}
+
+/* ======================================= */
+.modal__description, .modal__opinions {
+    background-color: var(--background-soft);
+    padding: 0 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(36, 49, 49, 0.1);
+    text-align: justify;
+    text-align-last: left;
+    word-spacing: normal;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+}
+
+.modal__services, .modal__atractions {
+    background-color: var(--background-soft);
+    padding: 0 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(36, 49, 49, 0.1);
+    word-spacing: normal;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+}
+
+/* ======================================= */
+
+.recommendations {
+    background-color: var(--background-soft);
+    padding: 20px 40px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(36, 49, 49, 0.1);
+
+}
+
+
+/* ATRACTIONS */
+.atractions {
+    background-color: var(--background-soft);
+    padding: 20px 40px;
+    margin-bottom: 20px;
+}
+
+/* RESERVATIONS */
+.modal__reservations {
+    color: var(--primary);
+    font-size: var(--fontsize-sm);
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.reservation-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    /* <-- ESTIRA LOS ELEMENTOS PARA IGUALAR ALTURA */
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.reservation-container .fixed-container {
+    outline: none;
+    flex: 1;
+    height: 100%;
+}
+
+.fixed-container,
+.mobile-container {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 2px;
+    box-sizing: border-box;
+    display: flex;
+    /* Para que su contenido no rompa el layout */
+    flex-direction: column;
+    background-color: var(--background-soft);
+}
+
+.mobile-container {
+    flex: 1;
+}
+
+.mobile-container strong, .fixed-container strong {
+    font-size: var(--fontsize-md);
+}
+
+@media (max-width: 800px) {
+    .reservation-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .fixed-container,
+    .mobile-container {
+        max-width: 100%;
+    }
+
+    #modalHoteleria-reservations {
+        font-size: 1.2rem;
+    }
+
+    #modalHoteleria-reservations a, #modalHoteleria-reservations p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #modalHoteleria-reservations {
+        font-size: 1rem;
+    }
+
+    #modalHoteleria-reservations a, #modalHoteleria-reservations p {
+        font-size: 0.9rem;
+    }
+}
+
+/* IMAGE AND SCROLL */
+
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 12px;
+    padding: 10px 0;
+    background-color: var(--light-soft) !important;
+    margin-bottom: 20px;
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-container .card__image {
+    width: 300px;
+    max-width: 300px;
+    min-height: 100%;
+    margin: 0 15px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.scroll-container .card__image a {
+    display: block;
+    width: 300px;
+    max-width: 300px;
+    height: 200px;
+    flex-shrink: 0;
+}
+
+.scroll-container .image {
+    min-width: 100%;
+    height: auto;
+}
+
+.scroll-container a {
+    display: block;
+    width: 300px;
+    max-width: 300px;
+    height: 200px;
+    flex-shrink: 0;
+}
+
+/* ======================================= */
+/* LOCATION */
+.location {
+    text-align: center;
+    font-size: var(--fontsize-md);
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 50px;
+    background-color: var(--light-soft);
+}
+
+.modal__location__title {
+    font-weight: bold;
+    font-size: var(--fontsize-md);
+    margin-bottom: 15px;
+    color: var(--primary);
+    text-align: center;
+}
+
+.modal__location__address {
+    font-size: var(--fontsize-sm);
+    color: var(--primary-dark);
+}
+
+/* ======================================= */
+/* SOCIAL NETWORK */
+.modal__socialnetworks {
+    font-size: var(--fontsize-standard);
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.modal__socialnetworks .title {
+    color: var(--primary);
+    font-size: var(--fontsize-md);
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* UL como grid flexible */
+.modal__socialnetworks ul {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__socialnetworks ul li {
+    transition: all 1s ease;
+}
+
+/* Hover: cambia color y sube ligeramente */
+.modal__socialnetworks ul li:hover {
+    color: var(--black);
+    transform: translateY(-2px);
+}
+
+/* Enlace con ícono */
+.modal__socialnetworks ul li a {
+    max-width: 100px;
+    padding: 8px 10px;
+    text-align: center;
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.modal__socialnetworks ul li:hover .sn-facebook {
+    text-shadow: 0 5px 10px rgba(59, 89, 152, 0.2);
+}
+
+.modal__socialnetworks ul li:hover .sn-tiktok {
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal__socialnetworks ul li:hover .sn-instagram {
+    text-shadow: 0 5px 10px rgba(228, 64, 94, 0.2);
+}
+
+.sn-facebook, .sn-tiktok, .sn-instagram {
+    font-size: 2.8rem;
+}
+
+@media (max-width: 600px) {
+    .modal__socialnetworks ul li a {
+        grid-area: 2px;
+    }
+
+    .sn-facebook, .sn-tiktok, .sn-instagram {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal__socialnetworks ul {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ======================================= */
+/* WEBSITES */
+.modal__website {
+    text-align: center;
+    color: var(--blue);
+    font-size: var(--fontsize-medium);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    padding: 20px;
+    background-color: transparent;
+    display: inline-block;
+}
+
+
+.modal__website:hover {
+    color: var(--blue-dark);
+}
+
+.modal__website .icon-link {
+    color: var(--blue);
+}
+
+/* CLOSE MODAL */
+.close-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
