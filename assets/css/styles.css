@@ -210,7 +210,7 @@ a, a:hover {
 }
 
 .irArriba:hover {
-    background: transparent;
+    background: var(--secondary);
     color: var(--primary);
     border-color: var(--primary);
 }
