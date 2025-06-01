@@ -11,7 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const updateActiveLink = () => {
-    const fromTop = window.scrollY + offsetNavbar + 5;
+    //  const fromTop = window.scrollY + offsetNavbar + 5;
+    const fromTop = window.scrollY + window.innerHeight / 2;
+
     let currentId = null;
 
     mainNavLinks.forEach((link) => {

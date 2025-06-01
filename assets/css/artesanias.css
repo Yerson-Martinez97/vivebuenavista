@@ -5,7 +5,7 @@
     /* Centra verticalmente */
     align-items: center;
     /* Centra horizontalmente */
-    min-height: 100vh;
+    /* min-height: 100vh; */
     /* Permite que el contenido crezca si es necesario */
     padding: 1rem;
     text-align: center;
@@ -171,6 +171,16 @@
     color: var(--primary);
 }
 
+@media screen and (max-width: 992px) {
+    .modalArtesania .modal-content {
+        padding: 20px 0px;
+    }
+
+    .modalArtesania .description {
+        padding: 20px 15px !important;
+    }
+}
+
 .modalArtesania .close-btn {
     position: absolute;
     top: 16px;
@@ -206,6 +216,9 @@
 
 .modalArtesania .modalArtesania-image {
     width: 300px;
+    max-width: 300px;
+    min-height: 100%;
+    margin: 0 15px;
     height: 200px;
     object-fit: cover;
     border-radius: 8px;
@@ -215,6 +228,7 @@
 .modalArtesania #modalArtesania-images a {
     display: block;
     width: 300px;
+    max-width: 300px;
     height: 200px;
     flex-shrink: 0;
 }
@@ -233,8 +247,5 @@
     color: #0d141c;
     margin-top: 10px;
     line-height: 1.8rem;
-    text-align: justify;
-    text-justify: inter-word;
-    hyphens: auto;
 
 }

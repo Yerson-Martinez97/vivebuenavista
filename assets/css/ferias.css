@@ -5,7 +5,7 @@
     /* Centra verticalmente */
     align-items: center;
     /* Centra horizontalmente */
-    min-height: 100vh;
+    /* min-height: 100vh; */
     /* Permite que el contenido crezca si es necesario */
     padding: 1rem;
     text-align: center;
@@ -171,6 +171,16 @@
     color: var(--primary);
 }
 
+@media screen and (max-width: 992px) {
+    .modalFeria .modal-content {
+        padding: 20px 0px;
+    }
+
+    .modalFeria .description {
+        padding: 20px 15px !important;
+    }
+}
+
 .modalFeria .close-btn {
     position: absolute;
     top: 16px;
@@ -203,9 +213,6 @@
 
 }
 
-
-
-
 .modalFeria .title {
     text-align: center;
     font-size: 22px;
@@ -219,10 +226,6 @@
     color: #0d141c;
     margin-top: 10px;
     line-height: 1.8rem;
-    text-align: justify;
-    text-justify: inter-word;
-    hyphens: auto;
-
 }
 
 /* RESERVATIONS */

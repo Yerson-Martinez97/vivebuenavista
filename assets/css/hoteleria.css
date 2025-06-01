@@ -5,7 +5,7 @@
     /* Centra verticalmente */
     align-items: center;
     /* Centra horizontalmente */
-    min-height: 100vh;
+    /* min-height: 100vh; */
     /* Permite que el contenido crezca si es necesario */
     padding: 1rem;
     text-align: center;

@@ -123,9 +123,14 @@ a, a:hover {
 
 .description {
     background-color: var(--background-soft);
-    padding: 20px 40px;
+    padding: 20px 25px;
     margin-bottom: 20px;
     box-shadow: 0 2px 5px rgba(36, 49, 49, 0.1);
+    text-align: justify;
+    text-align-last: left;
+    word-spacing: normal;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
 }
 
 /* Atractions */
