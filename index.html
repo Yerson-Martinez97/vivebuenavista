@@ -27,8 +27,6 @@
     <script type="module" src="https://unpkg.com/photoswipe@5/dist/photoswipe.esm.js"></script>
     <script type="module" src="https://unpkg.com/photoswipe@5/dist/photoswipe-lightbox.esm.js"></script>
 
-    <!-- SWIPER CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <!-- FONTS -->
     <link rel="stylesheet" type="text/css" href="assets/icons/icomoon.css">
@@ -300,7 +298,9 @@
                         Ver Ruta
                     </a>
                 </div>
-                <div id="modalAtractivo-images" class="scroll-container"> </div>
+                <div class="scroll-wrapper">
+                    <div id="modalAtractivo-images" class="scroll-container"> </div>
+                </div>
             </div>
         </div>
         <!-- Fin Sección Atractivos -->
@@ -346,7 +346,9 @@
                 <p id="modalArtesania-description" class="modal__description">
                     Párrafo
                 </p>
-                <div id="modalArtesania-images" class="scroll-container"> </div>
+                <div class="scroll-wrapper">
+                    <div id="modalArtesania-images" class="scroll-container"> </div>
+                </div>
             </div>
         </div>
         <!-- Fin Sección Artesanias -->
@@ -354,8 +356,30 @@
         <!-- Sección Hoteleria -->
         <section id="linkHoteleria" class="containerHoteleria" data-aos="fade-up">
             <h2 class="section-title">Hotelería</h2>
+            <div class="filter-wrapper">
+                <!-- Menú tipo select con ul/li solo en móviles -->
+                <div class="custom-select-mobile">
+                    <div class="selected-option" onclick="toggleDropdown()"><i class='fa-solid fa-chevron-down'></i>
+                        Todos</div>
+                    <ul class="options-list">
+                        <li data-filter="all" class="active">Todos</li>
+                        <li data-filter="cerca">Cercanos</li>
+                        <li data-filter="alejados">Lejanos</li>
+                        <li data-filter="cabanas">Cabañas</li>
+                    </ul>
+                </div>
+
+                <!-- Botones visibles en escritorio -->
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="cerca">Cercanos</button>
+                    <button class="filter-btn" data-filter="alejados">Lejanos</button>
+                    <button class="filter-btn" data-filter="cabanas">Cabañas</button>
+                </div>
+            </div>
+
             <div class="card-container">
-                <div class="card">
+                <div class="card" data-category="alejados">
                     <div class="card-img"
                         style="background-image: url('assets/images/hoteleria/alejados/01/image01.webp');"></div>
                     <div class="card-body">
@@ -367,7 +391,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-category="alejados">
                     <div class="card-img"
                         style="background-image: url('assets/images/hoteleria/alejados/02/image02.webp');"></div>
                     <div class="card-body">
@@ -380,7 +404,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-category="cerca">
                     <div class="card-img"
                         style="background-image: url('assets/images/hoteleria/cerca/03/image01.webp');"></div>
                     <div class="card-body">
@@ -392,11 +416,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-category="cerca">
                     <div class="card-img"
                         style="background-image: url('assets/images/hoteleria/cerca/04/image03.webp');"></div>
                     <div class="card-body">
-                        <p class="card-title" title="Bosque de ángeles">Bosque de ángeles</p>
+                        <p class="card-title" title="Bosque de ángeles">Bosque de Ángeles</p>
                         <p class="card-description"></p>
                         <div class="spacer"></div>
                         <div class="button-wrapper">
@@ -404,7 +428,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-category="cerca">
                     <div class="card-img"
                         style="background-image: url('assets/images/hoteleria/cerca/05/image03.webp');"></div>
                     <div class="card-body">
@@ -416,7 +440,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-category="cerca">
                     <div class="card-img"
                         style="background-image: url('assets/images/hoteleria/cerca/06/image02.webp');"></div>
                     <div class="card-body">
@@ -428,11 +452,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-category="cerca">
                     <div class="card-img"
                         style="background-image: url('assets/images/hoteleria/cerca/07/image01.webp');"></div>
                     <div class="card-body">
-                        <p class="card-title" title="Hostal Buena Vista">Hostal Buena Vista</p>
+                        <p class="card-title" title="Hostal Buena Vista">Hostal BuenaVista</p>
                         <p class="card-description"></p>
                         <div class="spacer"></div>
                         <div class="button-wrapper">
@@ -440,7 +464,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-category="cabanas">
                     <div class="card-img"
                         style="background-image: url('assets/images/hoteleria/cabanas/08/image01.webp');"></div>
                     <div class="card-body">
@@ -452,7 +476,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-category="cabanas">
                     <div class="card-img"
                         style="background-image: url('assets/images/hoteleria/cabanas/09/image01.webp');"></div>
                     <div class="card-body">
@@ -464,7 +488,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-category="cabanas">
                     <div class="card-img"
                         style="background-image: url('assets/images/hoteleria/cabanas/10/image01.webp');"></div>
                     <div class="card-body">
@@ -486,7 +510,11 @@
                 <div id="modalHoteleria-services" class="modal__services">
                     Servicios
                 </div>
-                <div id="modalHoteleria-images" class="scroll-container"> </div>
+                <div class="scroll-wrapper">
+                    <div class="scroll-container" id="modalHoteleria-images">
+                    </div>
+                </div>
+
                 <div id="modalHoteleria-reservations" class="modal__reservations">Reservas </div>
                 <div id="modalHoteleria-atractions" class="modal__atractions">Atracciones</div>
                 <div class="location">
@@ -590,7 +618,9 @@
                 <div id="modalRestaurante-description" class="modal__description">
                     Descripción
                 </div>
-                <div id="modalRestaurante-images" class="scroll-container"> </div>
+                <div class="scroll-wrapper">
+                    <div id="modalRestaurante-images" class="scroll-container"> </div>
+                </div>
                 <div id="modalRestaurante-opinions" class="modal__opinions">Opiniones </div>
                 <div id="modalRestaurante-businesshours" class="modal__businesshours">Horarios:</div>
                 <div id="modalRestaurante-reservations" class="modal__reservations">Reservas </div>
@@ -711,8 +741,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <!-- SWIPER -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- AOS -->
     <script src="libraries/aos/aos.js"></script>
     <script src="libraries/aos/config.js"></script>
@@ -722,6 +750,7 @@
     <script src="js/modalArtesania.js" type="module"></script>
     <script src="js/modalHoteleria.js" type="module"></script>
     <script src="js/modalRestaurante.js" type="module"></script>
+    <script src="js/filterHoteleria.js" defer></script>
     <script src="js/modalFeria.js" type="module"></script>
 
 </body>
