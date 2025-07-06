@@ -6,32 +6,60 @@
             "Generalmente se celebra el primer domingo de septiembre. Este evento incluye la coronación de la Reina del Café, degustaciones, ferias productivas y actividades culturales."
         ]
     },
-    "MisaDeCampaña": {
-        "title": "Misa de Campaña",
-        "description": "La misa de campaña es una ceremonia religiosa que se celebra al aire libre, comúnmente en el campo o en plazas públicas. Estas misas son una tradición en muchas comunidades rurales, permitiendo a los fieles participar en la liturgia en un entorno natural. Aunque no se encontró una fuente específica sobre la misa de campaña en Buena Vista, este tipo de celebraciones son comunes en festividades religiosas del área.",
-        "event": [
-            "También se celebra el 26 de noviembre, durante la fiesta patronal."
-        ]
-    },
-    "FeriaDeGanado": {
-        "title": "Feria De Ganado",
-        "description": "En San Pedro de Buena Vista, se celebra el \"Toro Tinku\", la mayor feria ganadera de la región norte de Potosí. Esta festividad, reconocida por la Asamblea Legislativa Plurinacional, incluye exhibiciones de ganado y actividades culturales que reflejan la importancia de la ganadería en la región.",
-        "event": [
-            "Inicia el 27 de junio y culmina el 29 de junio, coincidiendo con la festividad de San Pedro y San Pablo."
-        ]
-    },
-    "RomeríaConCarretasYGruposFolcloricos": {
-        "title": "Romería con Carretas y Grupos Folclóricos",
-        "description": "Las romerías en Buena Vista son procesiones religiosas en las que los santos patronos son acompañados por carretas decoradas y grupos folclóricos. Estas celebraciones combinan la devoción religiosa con expresiones culturales, incluyendo música y danzas tradicionales. Aunque no se encontró una fuente específica sobre las romerías en Buena Vista, este tipo de eventos son comunes en las festividades locales.",
-        "event": [
-            "Se realiza en el marco de la fiesta patronal de Buena Vista, el 26 de noviembre."
-        ]
-    },
     "CafeDeLaSiesta": {
         "title": "Café de la Siesta",
         "description": "El 'Café de la Siesta' es una tradición local que consiste en disfrutar de una taza de café durante la tarde, especialmente después del almuerzo. Esta costumbre resalta la importancia del café en la vida cotidiana de los habitantes de Buena Vista.",
         "event": [
             "No tiene una fecha específica; es una tradición diaria."
+        ]
+    },
+    "AniversarioIchilo": {
+        "title": "La Provincia Ichilo Celebra Su Aniversario",
+        "description": "La provincia Ichilo celebra su aniversario conmemorando su rica historia, diversidad cultural y potencial productivo. \n La provincia Ichilo fue creada por Ley del 8 de abril del año 1926. Es necesario aclarar que el mensajero que trajo la noticia de La Paz, recién llegó a Buenavista en fecha 30 de junio del mismo año, por lo tanto, los buenavisteños festejan el aniversario de la fundación de la provincia Ichilo el 30 de junio, esta provincia del departamento de Santa Cruz es hogar de municipios como Yapacaní, San Carlos, San Juan y Buena Vista. Ichilo destaca por su biodiversidad, su agricultura pujante y su gente trabajadora que impulsa el desarrollo regional.",
+        "images": [
+            "assets/images/ferias/aniversarioichilo/img01.webp",
+            "assets/images/ferias/aniversarioichilo/img02.webp",
+            "assets/images/ferias/aniversarioichilo/img03.webp",
+            "assets/images/ferias/aniversarioichilo/img04.webp"
+        ],
+        "event": [
+            "<i>Fecha: 30 de Junio</i>"
+        ]
+    },
+    "SemanaSanta": {
+        "title": "La Semana Santa en Buena Vista",
+        "description": "La Semana Santa en Buena Vista, Santa Cruz, es una de las festividades religiosas y culturales más significativas de la región.  Durante esta época, se combinan tradiciones católicas con expresiones culturales locales, ofreciendo una experiencia única para residentes y visitantes. <br> - Actividades religiosas destacadas <br> Durante la Semana Santa, Buena Vista celebra diversas actividades religiosas que incluyen misas especiales, procesiones y representaciones teatrales de la Pasión de Cristo.  Estas actividades son organizadas por la parroquia local y la comunidad, reflejando la devoción y el compromiso espiritual de la población.<br><br>",
+        "images": [
+            "assets/images/ferias/semanasanta/img01.webp",
+            "assets/images/ferias/semanasanta/img02.webp",
+            "assets/images/ferias/semanasanta/img03.webp",
+            "assets/images/ferias/semanasanta/img04.webp"
+        ],
+        "event": [
+            "<i>Fecha: Segunda semana de abril.</i>"
+        ]
+    },
+    "PascuaSanPedro": {
+        "title": "Fiesta de Pascua en San Pedro de Buena Vista",
+        "description": "San Pedro de Buena Vista celebró su tradicional Fiesta de Pascua, destacando por su evento cultural más emblemático: el \"Toro Tinku\".  Este evento es una manifestación cultural que combina música, danza y representaciones simbólicas, atrayendo a numerosos visitantes locales y turistas.",
+        "images": [
+            "assets/images/ferias/pascuasanpedro/img01.webp",
+            "assets/images/ferias/pascuasanpedro/img02.webp"
+        ],
+        "event": [
+            "Fecha: Segunda semana de abril."
+        ]
+    },
+    "TradicionBuenaVisteña": {
+        "title": "Día de la Tradición Buenavisteña",
+        "description": "El Día de la Tradición Buenavisteña se celebra cada segundo domingo de octubre en el municipio de Buena Vista, Santa Cruz. Es una festividad cultural que busca rescatar y promover las tradiciones locales, con la participación activa de toda la comunidad. <br> Actividades principales: <br>- Desfile cívico-cultural <br>- Coronación de la Reina de la Tradición <br>- Música y danzas folklóricas <br>- Feria gastronómica y artesanal <br> - Juegos tradicionales <br> <b>Objetivo</b> <br> Preservar la identidad cultural y mostrar con orgullo las costumbres de Buena Vista. <br> Es un evento colorido, lleno de alegría, tradición y participación comunitaria, ideal para conocer la esencia cultural del pueblo.",
+        "images": [
+            "assets/images/ferias/tradicionbuenavisteña/img01.webp",
+            "assets/images/ferias/tradicionbuenavisteña/img02.webp",
+            "assets/images/ferias/tradicionbuenavisteña/img03.webp"
+        ],
+        "event": [
+            "<i>Fecha: Se celebra el 3er domingo del mes de octubre.</i>"
         ]
     }
 }

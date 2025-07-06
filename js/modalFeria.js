@@ -12,10 +12,11 @@ document.addEventListener("DOMContentLoaded", () => {
             openModalFeria(
               feria.title || "",
               feria.description || "",
+              feria.images || "",
               feria.event || ""
             );
           } else {
-            openModalFeria("Información no disponible", "", []);
+            openModalFeria("Información No Disponible", "", [], []);
           }
         });
       });
@@ -39,7 +40,7 @@ import PhotoSwipeLightbox from "../libraries/photoswiper/photoswipe-lightbox.esm
 
 let feriaLightbox = null;
 
-function openModalFeria(title, description, event) {
+function openModalFeria(title, description, images, event) {
   document.body.style.overflow = "hidden";
 
   const modalFeria = document.getElementById("modalFeria");
@@ -47,13 +48,49 @@ function openModalFeria(title, description, event) {
   const modalFeriaDescription = document.getElementById(
     "modalFeria-description"
   );
+  const modalFeriaImages = document.getElementById("modalFeria-images");
   const modalFeriaEvent = document.getElementById("modalFeria-event");
 
   modalFeriaTitle.innerText = title;
   modalFeriaDescription.innerHTML = description;
+  modalFeriaImages.innerHTML = "";
   modalFeriaEvent.innerHTML = "<h2 class='modalFeria__title'>Evento</h2>";
   modalFeriaEvent.innerHTML += event;
-  // -----
+  // Destruir instancia anterior de PhotoSwipe
+  if (feriaLightbox) {
+    feriaLightbox.destroy();
+  }
+
+  if (Array.isArray(images) && images.length > 0) {
+    images.forEach((src) => {
+      const a = document.createElement("a");
+      a.href = src;
+      a.setAttribute("data-pswp-width", "1200"); // Ajusta según tamaño real
+      a.setAttribute("data-pswp-height", "800"); // Ajusta según tamaño real
+      a.style.cursor = "pointer";
+      const img = document.createElement("img");
+      img.src = src;
+      img.alt = title;
+      img.classList.add("card__image");
+      a.appendChild(img);
+      modalFeriaImages.appendChild(a);
+    });
+    // Crear nueva instancia de PhotoSwipeLightbox
+    feriaLightbox = new PhotoSwipeLightbox({
+      gallery: "#modalFeria-images",
+      children: "a",
+      pswpModule: () => import("../libraries/photoswiper/photoswipe.esm.js"),
+      showHideAnimationType: "fade",
+      loop: false,
+      showHideAnimationType: "zoom",
+      bgOpacity: 0.8,
+      clickToCloseNonZoomable: true,
+      tapAction: "toggle-controls",
+      preload: [1, 1],
+    });
+    feriaLightbox.init();
+  }
+  // // -----
   modalFeria.style.display = "flex";
 }
 
