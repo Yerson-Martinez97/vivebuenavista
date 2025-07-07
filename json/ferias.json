@@ -2,6 +2,9 @@
     "FestivalNacionalDelCafe": {
         "title": "Festival Nacional del Café",
         "description": "<p>El Festival Nacional del Café en Buena Vista es un evento que celebra la producción cafetalera de la región.\n Entre sus actividades destacan:</p> <p> 1. Coronación de la Soberana del Café: Se elige y corona a una representante que simboliza la cultura cafetalera.</p><p> 2. Muestra y Degustación de Café: Los productores locales presentan sus variedades de café para degustación. </p> 3. Conferencias: Se realizan charlas sobre técnicas de cultivo y comercialización del café.</p><p> 4. Feria Productiva, Artesanal y Gastronómica: Se exhiben productos artesanales y gastronómicos de la región.</p><p> 5. Actividades Hípicas: Eventos ecuestres que forman parte de la celebración.</p><p> Este festival ha alcanzado renombre nacional y es una muestra del esfuerzo de los caficultores de Buena Vista.</p>",
+        "images": [
+            "assets/images/ferias/festivalcafe/img01.webp"
+        ],
         "event": [
             "Generalmente se celebra el primer domingo de septiembre. Este evento incluye la coronación de la Reina del Café, degustaciones, ferias productivas y actividades culturales."
         ]
@@ -9,6 +12,9 @@
     "CafeDeLaSiesta": {
         "title": "Café de la Siesta",
         "description": "El 'Café de la Siesta' es una tradición local que consiste en disfrutar de una taza de café durante la tarde, especialmente después del almuerzo. Esta costumbre resalta la importancia del café en la vida cotidiana de los habitantes de Buena Vista.",
+        "images": [
+            "assets/images/ferias/cafesiesta/img01.webp"
+        ],
         "event": [
             "No tiene una fecha específica; es una tradición diaria."
         ]
