@@ -3,11 +3,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    padding: 2rem;
     text-align: center;
     background-color: var(--secondary);
     box-sizing: border-box;
     overflow: hidden;
+    width: 100%;
 }
 
 .containerIntegrantes .section-title {
@@ -18,64 +19,90 @@
 }
 
 .containerIntegrantes .card-container {
-    background-color: var(--light-soft);
+    background-color: var(--secondary);
     padding: 1rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
-    align-items: stretch;
+    /* Permite el salto de línea cuando sea necesario */
+    gap: 1.5rem;
+    /* Espacio entre las tarjetas */
     justify-content: center;
-    /* overflow-x: auto; */
-    width: 100%;
-    max-width: 1000px;
+    /* Centra las tarjetas */
+    width: 80%;
+    max-width: 1200px;
 }
 
 .containerIntegrantes .card {
-    box-shadow: none;
     display: flex;
-    flex-direction: column;
-    height: 250px;
-    max-height: 300px;
-    width: 250px;
-    max-width: 250px;
-    flex-shrink: 1;
-    border-radius: 5px;
+    align-items: center;
     background-color: white;
-}
-
-.containerIntegrantes .card-img {
-    aspect-ratio: 16 / 9;
-    background-size: cover;
-    background-position: center;
-    border-radius: 12px 12px 0 0;
-    flex-shrink: 0;
+    /* padding: 1rem; */
+    border-radius: 8px;
+    box-shadow: none;
+    width: 100%;
+    /* Asegura que las tarjetas ocupen el 100% del espacio disponible */
+    max-width: 300px;
+    border: 1px solid #ddd;
+    border: none;
 }
 
 .containerIntegrantes .card-body {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
+    justify-content: flex-start; /* Alinea todo el contenido hacia la izquierda */
     gap: 1rem;
-    padding: 1rem;
+    padding: 0;
     flex-grow: 1;
+    width: 100%;
 }
 
 .containerIntegrantes img {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+    flex-shrink: 0;
+    border: 2px solid var(--primary);
 }
 
 .containerIntegrantes .card-description {
-    width: 100%;
-    font-size: var(--fontsize-sm);
-    color: #727978;
-    display: -webkit-box;
-    display: box;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    line-clamp: 3;
-    box-orient: vertical;
+    font-size: var(--fontsize-base);
+    color: var(--primary);
+    text-align: left;
+    margin: 0;
+}
+
+/* Media Queries para Pantallas Responsivas */
+@media (max-width: 1200px) {
+    .containerIntegrantes .card-container {
+        width: 80%;
+        max-width: 1200px;
+    }
+
+    .containerIntegrantes .card {
+        width: 300px;
+        max-width: none;
+    }
+}
+
+/* Media Queries para Pantallas Responsivas */
+@media (max-width: 768px) {
+    .containerIntegrantes .card-container {
+        width: 95%;
+        /* Asegura que el contenedor ocupe más espacio en pantallas pequeñas */
+    }
+
+    .containerIntegrantes .card {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 480px) {
+    .containerIntegrantes .card {
+        max-width: 100%;
+        /* Asegura que las tarjetas ocupen todo el ancho disponible */
+    }
 }
